@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.3" version="1.3" xmlns:viz="http://www.gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2018-08-01">
+    <creator>Gephi 0.9</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="lokationposition1highest53lowest" title="Lokationposition1highest53lowest" type="double"></attribute>
+      <attribute id="handicapped" title="Handicapped" type="integer"></attribute>
+      <attribute id="repeater" title="Repeater" type="integer"></attribute>
+      <attribute id="sweetsgiver" title="Sweetsgiver" type="integer"></attribute>
+    </attributes>
+    <nodes>
+      <node id="1" label="Schlegel">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="1.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="187.47395" y="509.58176"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="2" label="Albert Hager">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="2.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-421.22968" y="529.3551"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="3" label="Böger">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="3.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-5.9839387" y="154.6763"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="4" label="Meier">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="4.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="7.956491" y="-42.80426"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="5" label="Meinhold">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="5.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="224.907" y="10.007017"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="6" label="Herold">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="6.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="482.84094" y="467.69302"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="7" label="Rettig">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="7.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-341.37244" y="-321.10464"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="8" label="Meyer">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="8.0"></attvalue>
+          <attvalue for="handicapped" value="1"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-133.25572" y="-121.77969"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="9" label="Schneider">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="9.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="308.77423" y="-310.96326"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="10" label="Köchel">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="10.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="368.35962" y="-265.86066"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="11" label="Wolf">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="11.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-114.10061" y="-264.9598"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="12" label="Ernst">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="12.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-152.83391" y="-326.36588"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="13" label="Trampler">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="13.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="16.299204" y="186.10165"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="14" label="Vetter">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="14.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="1"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-299.42682" y="105.23959"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="15" label="Pfeil">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="15.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="1"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-205.68172" y="414.13962"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="16" label="Pröse">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="16.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="282.90015" y="224.58615"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="17" label="Holzmüller">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="17.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="343.37103" y="354.16696"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="18" label="Eisenreich">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="18.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="233.05104" y="-293.5508"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="19" label="Pröhl">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="19.0"></attvalue>
+          <attvalue for="handicapped" value="1"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="65.765205" y="-278.63315"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="20" label="Reinh. Zimmermann">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="20.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-79.24456" y="374.0145"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="21" label="Schaller">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="21.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="172.54433" y="478.28897"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="22" label="Stolze">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="22.0"></attvalue>
+          <attvalue for="handicapped" value="1"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="460.50238" y="-230.65977"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="23" label="Schnabel">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="23.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="1"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-98.051476" y="470.7736"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="24" label="Schmidt">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="24.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="387.8012" y="-172.68372"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="25" label="Fritzsche">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="25.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-441.27325" y="-367.33994"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="26" label="Röhling">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="26.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="144.1639" y="-210.00742"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="27" label="Rudolf">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="27.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="136.41597" y="-202.97107"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="28" label="Hofmann">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="28.0"></attvalue>
+          <attvalue for="handicapped" value="1"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-24.791952" y="88.96768"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="29" label="Kießling">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="29.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-179.16466" y="-54.32614"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="30" label="Räubert">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="30.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-289.46036" y="170.60013"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="31" label="Haas">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="31.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="115.4264" y="-321.30618"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="32" label="Bernhardt">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="32.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="164.58192" y="142.12436"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="33" label="Rausch">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="33.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-322.29614" y="-207.45807"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="34" label="Bernh. Schubert">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="34.0"></attvalue>
+          <attvalue for="handicapped" value="1"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-425.726" y="-323.67624"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="35" label="Flach">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="35.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="210.96266" y="117.56241"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="36" label="Groß">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="36.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-427.42834" y="-171.7655"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="37" label="Kneisel">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="37.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-83.47817" y="184.99246"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="38" label="Seifert">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="38.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-314.06055" y="289.42203"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="39" label="Thrum">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="39.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="79.16688" y="-131.39877"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="40" label="Hergert">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="40.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="239.53206" y="133.69534"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="41" label="Lasch">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="41.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="332.08618" y="-122.41684"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="42" label="O. Müller">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="42.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-144.47993" y="292.69113"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="43" label="R. Müller">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="43.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="27.479258" y="-134.9815"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="44" label="Pröse">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="44.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="438.02313" y="-159.41605"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="45" label="Rich. Zimmermann">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="45.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-74.85238" y="-39.84088"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="46" label="R. Schubert">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="46.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="1"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-347.62805" y="-335.75516"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="47" label="Wilhelm">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="47.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="103.76191" y="-267.0068"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="48" label="Neidhardt">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="48.0"></attvalue>
+          <attvalue for="handicapped" value="1"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="426.92712" y="248.4946"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="49" label="Fährmann">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="49.0"></attvalue>
+          <attvalue for="handicapped" value="1"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-401.86798" y="-44.013275"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="50" label="Pippig">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="50.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-67.55779" y="115.66641"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="51" label="Golla">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="51.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-229.31139" y="40.59677"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="52" label="Ebersbach">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="52.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-173.0355" y="-75.48721"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+      <node id="53" label="Albin Hager">
+        <attvalues>
+          <attvalue for="lokationposition1highest53lowest" value="53.0"></attvalue>
+          <attvalue for="handicapped" value="0"></attvalue>
+          <attvalue for="repeater" value="0"></attvalue>
+          <attvalue for="sweetsgiver" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-163.48094" y="-304.90482"></viz:position>
+        <viz:color r="153" g="153" b="153"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="16" source="1" target="4"></edge>
+      <edge id="20" source="1" target="5"></edge>
+      <edge id="131" source="1" target="37"></edge>
+      <edge id="61" source="2" target="15"></edge>
+      <edge id="112" source="2" target="25"></edge>
+      <edge id="173" source="2" target="51"></edge>
+      <edge id="9" source="3" target="2"></edge>
+      <edge id="17" source="3" target="4"></edge>
+      <edge id="32" source="3" target="9"></edge>
+      <edge id="78" source="3" target="16"></edge>
+      <edge id="127" source="3" target="36"></edge>
+      <edge id="36" source="4" target="10"></edge>
+      <edge id="47" source="4" target="14"></edge>
+      <edge id="96" source="4" target="23"></edge>
+      <edge id="128" source="4" target="36"></edge>
+      <edge id="154" source="4" target="46"></edge>
+      <edge id="165" source="4" target="49"></edge>
+      <edge id="1" source="5" target="1"></edge>
+      <edge id="26" source="5" target="6"></edge>
+      <edge id="48" source="5" target="14"></edge>
+      <edge id="107" source="5" target="24"></edge>
+      <edge id="10" source="6" target="2"></edge>
+      <edge id="18" source="6" target="4"></edge>
+      <edge id="21" source="6" target="5"></edge>
+      <edge id="49" source="6" target="14"></edge>
+      <edge id="37" source="7" target="11"></edge>
+      <edge id="79" source="7" target="16"></edge>
+      <edge id="137" source="9" target="41"></edge>
+      <edge id="169" source="9" target="50"></edge>
+      <edge id="19" source="10" target="4"></edge>
+      <edge id="29" source="11" target="7"></edge>
+      <edge id="33" source="11" target="9"></edge>
+      <edge id="50" source="11" target="14"></edge>
+      <edge id="62" source="11" target="15"></edge>
+      <edge id="118" source="11" target="28"></edge>
+      <edge id="148" source="12" target="44"></edge>
+      <edge id="138" source="13" target="41"></edge>
+      <edge id="2" source="14" target="1"></edge>
+      <edge id="63" source="14" target="15"></edge>
+      <edge id="97" source="14" target="23"></edge>
+      <edge id="155" source="14" target="46"></edge>
+      <edge id="22" source="15" target="5"></edge>
+      <edge id="27" source="15" target="6"></edge>
+      <edge id="30" source="15" target="7"></edge>
+      <edge id="51" source="15" target="14"></edge>
+      <edge id="82" source="15" target="17"></edge>
+      <edge id="98" source="15" target="23"></edge>
+      <edge id="113" source="15" target="25"></edge>
+      <edge id="156" source="15" target="46"></edge>
+      <edge id="174" source="15" target="51"></edge>
+      <edge id="13" source="16" target="3"></edge>
+      <edge id="52" source="16" target="14"></edge>
+      <edge id="64" source="16" target="15"></edge>
+      <edge id="88" source="16" target="19"></edge>
+      <edge id="65" source="17" target="15"></edge>
+      <edge id="3" source="18" target="1"></edge>
+      <edge id="38" source="18" target="11"></edge>
+      <edge id="99" source="18" target="23"></edge>
+      <edge id="133" source="18" target="38"></edge>
+      <edge id="135" source="18" target="39"></edge>
+      <edge id="157" source="18" target="46"></edge>
+      <edge id="139" source="21" target="41"></edge>
+      <edge id="4" source="22" target="1"></edge>
+      <edge id="11" source="22" target="2"></edge>
+      <edge id="14" source="22" target="3"></edge>
+      <edge id="28" source="22" target="6"></edge>
+      <edge id="39" source="22" target="11"></edge>
+      <edge id="66" source="22" target="15"></edge>
+      <edge id="90" source="22" target="21"></edge>
+      <edge id="140" source="22" target="41"></edge>
+      <edge id="149" source="22" target="44"></edge>
+      <edge id="166" source="22" target="49"></edge>
+      <edge id="23" source="23" target="5"></edge>
+      <edge id="53" source="23" target="14"></edge>
+      <edge id="67" source="23" target="15"></edge>
+      <edge id="158" source="23" target="46"></edge>
+      <edge id="24" source="24" target="5"></edge>
+      <edge id="91" source="24" target="21"></edge>
+      <edge id="141" source="24" target="41"></edge>
+      <edge id="175" source="24" target="51"></edge>
+      <edge id="12" source="25" target="2"></edge>
+      <edge id="167" source="25" target="49"></edge>
+      <edge id="176" source="25" target="51"></edge>
+      <edge id="54" source="26" target="14"></edge>
+      <edge id="80" source="26" target="16"></edge>
+      <edge id="159" source="26" target="46"></edge>
+      <edge id="125" source="27" target="33"></edge>
+      <edge id="40" source="28" target="11"></edge>
+      <edge id="68" source="29" target="15"></edge>
+      <edge id="100" source="29" target="23"></edge>
+      <edge id="5" source="30" target="1"></edge>
+      <edge id="55" source="30" target="14"></edge>
+      <edge id="160" source="30" target="46"></edge>
+      <edge id="170" source="30" target="50"></edge>
+      <edge id="56" source="31" target="14"></edge>
+      <edge id="69" source="31" target="15"></edge>
+      <edge id="108" source="31" target="24"></edge>
+      <edge id="120" source="31" target="30"></edge>
+      <edge id="142" source="31" target="41"></edge>
+      <edge id="129" source="32" target="36"></edge>
+      <edge id="93" source="33" target="22"></edge>
+      <edge id="117" source="33" target="27"></edge>
+      <edge id="25" source="35" target="5"></edge>
+      <edge id="31" source="36" target="7"></edge>
+      <edge id="41" source="36" target="11"></edge>
+      <edge id="101" source="36" target="23"></edge>
+      <edge id="109" source="36" target="24"></edge>
+      <edge id="119" source="36" target="29"></edge>
+      <edge id="124" source="36" target="32"></edge>
+      <edge id="151" source="36" target="45"></edge>
+      <edge id="164" source="36" target="47"></edge>
+      <edge id="171" source="36" target="50"></edge>
+      <edge id="42" source="37" target="11"></edge>
+      <edge id="172" source="37" target="50"></edge>
+      <edge id="6" source="38" target="1"></edge>
+      <edge id="15" source="38" target="3"></edge>
+      <edge id="43" source="38" target="11"></edge>
+      <edge id="70" source="38" target="15"></edge>
+      <edge id="83" source="38" target="17"></edge>
+      <edge id="87" source="38" target="18"></edge>
+      <edge id="102" source="38" target="23"></edge>
+      <edge id="114" source="38" target="25"></edge>
+      <edge id="130" source="38" target="36"></edge>
+      <edge id="136" source="38" target="39"></edge>
+      <edge id="143" source="38" target="41"></edge>
+      <edge id="168" source="38" target="49"></edge>
+      <edge id="103" source="39" target="23"></edge>
+      <edge id="126" source="39" target="33"></edge>
+      <edge id="132" source="39" target="37"></edge>
+      <edge id="34" source="41" target="9"></edge>
+      <edge id="46" source="41" target="13"></edge>
+      <edge id="92" source="41" target="21"></edge>
+      <edge id="110" source="41" target="24"></edge>
+      <edge id="177" source="41" target="51"></edge>
+      <edge id="84" source="42" target="17"></edge>
+      <edge id="104" source="42" target="23"></edge>
+      <edge id="152" source="42" target="45"></edge>
+      <edge id="71" source="43" target="15"></edge>
+      <edge id="85" source="43" target="17"></edge>
+      <edge id="105" source="43" target="23"></edge>
+      <edge id="161" source="43" target="46"></edge>
+      <edge id="7" source="44" target="1"></edge>
+      <edge id="45" source="44" target="12"></edge>
+      <edge id="72" source="45" target="15"></edge>
+      <edge id="81" source="45" target="16"></edge>
+      <edge id="94" source="45" target="22"></edge>
+      <edge id="123" source="45" target="31"></edge>
+      <edge id="144" source="45" target="41"></edge>
+      <edge id="150" source="45" target="44"></edge>
+      <edge id="8" source="46" target="1"></edge>
+      <edge id="57" source="46" target="14"></edge>
+      <edge id="73" source="46" target="15"></edge>
+      <edge id="106" source="46" target="23"></edge>
+      <edge id="74" source="47" target="15"></edge>
+      <edge id="86" source="47" target="17"></edge>
+      <edge id="44" source="49" target="11"></edge>
+      <edge id="75" source="49" target="15"></edge>
+      <edge id="95" source="49" target="22"></edge>
+      <edge id="115" source="49" target="25"></edge>
+      <edge id="121" source="49" target="30"></edge>
+      <edge id="134" source="49" target="38"></edge>
+      <edge id="145" source="49" target="41"></edge>
+      <edge id="147" source="49" target="42"></edge>
+      <edge id="153" source="49" target="45"></edge>
+      <edge id="35" source="50" target="9"></edge>
+      <edge id="58" source="50" target="14"></edge>
+      <edge id="76" source="50" target="15"></edge>
+      <edge id="162" source="50" target="46"></edge>
+      <edge id="59" source="51" target="14"></edge>
+      <edge id="111" source="51" target="24"></edge>
+      <edge id="116" source="51" target="25"></edge>
+      <edge id="60" source="52" target="14"></edge>
+      <edge id="89" source="52" target="19"></edge>
+      <edge id="163" source="52" target="46"></edge>
+      <edge id="179" source="52" target="53"></edge>
+      <edge id="77" source="53" target="15"></edge>
+      <edge id="122" source="53" target="30"></edge>
+      <edge id="146" source="53" target="41"></edge>
+      <edge id="178" source="53" target="52"></edge>
+    </edges>
+  </graph>
+</gexf>

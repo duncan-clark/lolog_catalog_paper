@@ -1156,37 +1156,6 @@ We would like to acknowledge and thank all of the authors that provided data tha
 \appendix
 \appendixpage
 \addappheadtotoc
-\section{R code for fitting LOLOG and ERGM models}\label{app:code}
-
-```{r,echo  = T,eval = F}
-library(statnet)
-library(lolog)
-
-# Example code for fitting ERGM and LOLOG model to network object net
-# net has nodal covariates node_1, and edge covariates edge_1
-
-# Fit the ERGM model with ergm package
-fitted_ergm <- ergm(net ~ edges + 
-                          gwesp(0.5,fixed = TRUE) + 
-                          gwdsp(0.5,fixed = TRUE) +
-                          nodecov("node_1") +
-                          edgecov("edge_1"))
-
-#summarise the ergm model
-summary(fitted_ergm)
-
-# Fit the lolog model with LOLOG package
-fitted_lolog <- lolog(net ~ edges + 
-                            gwdeg(0.5) +
-                            gwesp(0.5) + 
-                            nodeCov("node_1") + 
-                            edgeCov("edge_1"))
-
-#summarise the lolog model
-summary(fitted_lolog)
-
-```
-
 
 \section{Additional Goodness of Fit Figures}\label{app:GOF}
 

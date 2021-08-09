@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.8)  8 AUG 2021 18:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.8)  8 AUG 2021 20:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -368,29 +368,11 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip55
 )
-(c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb
-.sty
-Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
-\FV@CodeLineNo=\count281
-\FV@InFile=\read2
-\FV@TabBox=\box53
-\c@FancyVerbLine=\count282
-\FV@StepNumber=\count283
-\FV@OutFile=\write3
-)
-(c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
-Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip56
-\fb@frw=\dimen151
-\fb@frh=\dimen152
-\FrameRule=\dimen153
-\FrameSep=\dimen154
-)
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx
 .sty
 Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
-\Gin@req@height=\dimen155
-\Gin@req@width=\dimen156
+\Gin@req@height=\dimen151
+\Gin@req@width=\dimen152
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/grffile/grffile.s
 ty
@@ -405,11 +387,11 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup7
 ) (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count284
+\c@float@type=\count281
 \float@exts=\toks25
-\float@box=\box54
+\float@box=\box53
 \@float@everytoks=\toks26
-\@floatcapt=\box55
+\@floatcapt=\box54
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epst
 opdf.sty
@@ -436,50 +418,50 @@ e
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs
 .sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen157
-\lightrulewidth=\dimen158
-\cmidrulewidth=\dimen159
-\belowrulesep=\dimen160
-\belowbottomsep=\dimen161
-\aboverulesep=\dimen162
-\abovetopsep=\dimen163
-\cmidrulesep=\dimen164
-\cmidrulekern=\dimen165
-\defaultaddspace=\dimen166
-\@cmidla=\count285
-\@cmidlb=\count286
-\@aboverulesep=\dimen167
-\@belowrulesep=\dimen168
-\@thisruleclass=\count287
-\@lastruleclass=\count288
-\@thisrulewidth=\dimen169
+\heavyrulewidth=\dimen153
+\lightrulewidth=\dimen154
+\cmidrulewidth=\dimen155
+\belowrulesep=\dimen156
+\belowbottomsep=\dimen157
+\aboverulesep=\dimen158
+\abovetopsep=\dimen159
+\cmidrulesep=\dimen160
+\cmidrulekern=\dimen161
+\defaultaddspace=\dimen162
+\@cmidla=\count282
+\@cmidlb=\count283
+\@aboverulesep=\dimen163
+\@belowrulesep=\dimen164
+\@thisruleclass=\count284
+\@lastruleclass=\count285
+\@thisrulewidth=\dimen165
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.s
 ty
 Package: longtable 2021-05-07 v4.16 Multi-page Table package (DPC)
-\LTleft=\skip57
-\LTright=\skip58
-\LTpre=\skip59
-\LTpost=\skip60
-\LTchunksize=\count289
-\LTcapwidth=\dimen170
-\LT@head=\box56
-\LT@firsthead=\box57
-\LT@foot=\box58
-\LT@lastfoot=\box59
-\LT@gbox=\box60
-\LT@cols=\count290
-\LT@rows=\count291
-\c@LT@tables=\count292
-\c@LT@chunks=\count293
+\LTleft=\skip56
+\LTright=\skip57
+\LTpre=\skip58
+\LTpost=\skip59
+\LTchunksize=\count286
+\LTcapwidth=\dimen166
+\LT@head=\box55
+\LT@firsthead=\box56
+\LT@foot=\box57
+\LT@lastfoot=\box58
+\LT@gbox=\box59
+\LT@cols=\count287
+\LT@rows=\count288
+\c@LT@tables=\count289
+\c@LT@chunks=\count290
 \LT@p@ftn=\toks27
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/appendix/appendix
 .sty
 Package: appendix 2020/02/08 v1.2c extra appendix facilities
-\c@@pps=\count294
-\c@@ppsavesec=\count295
-\c@@ppsaveapp=\count296
+\c@@pps=\count291
+\c@@ppsavesec=\count292
+\c@@ppsaveapp=\count293
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry
 .sty
@@ -489,17 +471,17 @@ Package: geometry 2020/01/02 v5.9 Page Geometry
 y
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count297
-\Gm@cntv=\count298
-\c@Gm@tempcnt=\count299
-\Gm@bindingoffset=\dimen171
-\Gm@wd@mp=\dimen172
-\Gm@odd@mp=\dimen173
-\Gm@even@mp=\dimen174
-\Gm@layoutwidth=\dimen175
-\Gm@layoutheight=\dimen176
-\Gm@layouthoffset=\dimen177
-\Gm@layoutvoffset=\dimen178
+\Gm@cnth=\count294
+\Gm@cntv=\count295
+\c@Gm@tempcnt=\count296
+\Gm@bindingoffset=\dimen167
+\Gm@wd@mp=\dimen168
+\Gm@odd@mp=\dimen169
+\Gm@even@mp=\dimen170
+\Gm@layoutwidth=\dimen171
+\Gm@layoutheight=\dimen172
+\Gm@layouthoffset=\dimen173
+\Gm@layoutvoffset=\dimen174
 \Gm@dimlist=\toks28
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/todonotes/todonot
@@ -520,7 +502,7 @@ s.tex
 \XKV@toks=\toks29
 \XKV@tempa@toks=\toks30
 )
-\XKV@depth=\count300
+\XKV@depth=\count297
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer
@@ -532,14 +514,14 @@ rcs.sty
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
 gfutil-common.tex
 \pgfutil@everybye=\toks31
-\pgfutil@tempdima=\dimen179
-\pgfutil@tempdimb=\dimen180
+\pgfutil@tempdima=\dimen175
+\pgfutil@tempdimb=\dimen176
 
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
 gfutil-common-lists.tex))
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
 gfutil-latex.def
-\pgfutil@abb=\box61
+\pgfutil@abb=\box60
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/utilities/p
 gfrcs.code.tex
@@ -566,26 +548,26 @@ gfkeys.code.tex
 gfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks34
 ))
-\pgf@x=\dimen181
-\pgf@y=\dimen182
-\pgf@xa=\dimen183
-\pgf@ya=\dimen184
-\pgf@xb=\dimen185
-\pgf@yb=\dimen186
-\pgf@xc=\dimen187
-\pgf@yc=\dimen188
-\pgf@xd=\dimen189
-\pgf@yd=\dimen190
-\w@pgf@writea=\write4
-\r@pgf@reada=\read3
-\c@pgf@counta=\count301
-\c@pgf@countb=\count302
-\c@pgf@countc=\count303
-\c@pgf@countd=\count304
+\pgf@x=\dimen177
+\pgf@y=\dimen178
+\pgf@xa=\dimen179
+\pgf@ya=\dimen180
+\pgf@xb=\dimen181
+\pgf@yb=\dimen182
+\pgf@xc=\dimen183
+\pgf@yc=\dimen184
+\pgf@xd=\dimen185
+\pgf@yd=\dimen186
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count298
+\c@pgf@countb=\count299
+\c@pgf@countc=\count300
+\c@pgf@countd=\count301
 \t@pgf@toka=\toks35
 \t@pgf@tokb=\toks36
 \t@pgf@tokc=\toks37
-\pgf@sys@id@count=\count305
+\pgf@sys@id@count=\count302
 
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer
 /pgf.cfg
@@ -604,8 +586,8 @@ File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer
 /pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count306
-\pgfsyssoftpath@bigbuffer@items=\count307
+\pgfsyssoftpath@smallbuffer@items=\count303
+\pgfsyssoftpath@bigbuffer@items=\count304
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/systemlayer
 /pgfsysprotocol.code.tex
@@ -623,9 +605,9 @@ hcalc.code.tex
 hutil.code.tex)
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
 hparser.code.tex
-\pgfmath@dimen=\dimen191
-\pgfmath@count=\count308
-\pgfmath@box=\box62
+\pgfmath@dimen=\dimen187
+\pgfmath@count=\count305
+\pgfmath@box=\box61
 \pgfmath@toks=\toks38
 \pgfmath@stack@operand=\toks39
 \pgfmath@stack@operation=\toks40
@@ -650,59 +632,59 @@ hfunctions.misc.code.tex)
 hfunctions.integerarithmetics.code.tex)))
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
 hfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count309
+\c@pgfmathroundto@lastzeros=\count306
 ))
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint
 .code.tex)
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
 pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen192
-\pgf@picmaxx=\dimen193
-\pgf@picminy=\dimen194
-\pgf@picmaxy=\dimen195
-\pgf@pathminx=\dimen196
-\pgf@pathmaxx=\dimen197
-\pgf@pathminy=\dimen198
-\pgf@pathmaxy=\dimen199
-\pgf@xx=\dimen256
-\pgf@xy=\dimen257
-\pgf@yx=\dimen258
-\pgf@yy=\dimen259
-\pgf@zx=\dimen260
-\pgf@zy=\dimen261
+\pgf@picminx=\dimen188
+\pgf@picmaxx=\dimen189
+\pgf@picminy=\dimen190
+\pgf@picmaxy=\dimen191
+\pgf@pathminx=\dimen192
+\pgf@pathmaxx=\dimen193
+\pgf@pathminy=\dimen194
+\pgf@pathmaxy=\dimen195
+\pgf@xx=\dimen196
+\pgf@xy=\dimen197
+\pgf@yx=\dimen198
+\pgf@yy=\dimen199
+\pgf@zx=\dimen256
+\pgf@zy=\dimen257
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
 pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen262
-\pgf@path@lasty=\dimen263
+\pgf@path@lastx=\dimen258
+\pgf@path@lasty=\dimen259
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
 pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen264
-\pgf@shorten@start@additional=\dimen265
+\pgf@shorten@end@additional=\dimen260
+\pgf@shorten@start@additional=\dimen261
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
 pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfpic=\box63
-\pgf@hbox=\box64
-\pgf@layerbox@main=\box65
-\pgf@picture@serial@count=\count310
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
+\pgf@picture@serial@count=\count307
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
 pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen266
+\pgflinewidth=\dimen262
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
 pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen267
-\pgf@pt@y=\dimen268
-\pgf@pt@temp=\dimen269
+\pgf@pt@x=\dimen263
+\pgf@pt@y=\dimen264
+\pgf@pt@temp=\dimen265
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
 pgfcorequick.code.tex
@@ -719,14 +701,14 @@ File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
 pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen270
+\pgfarrowsep=\dimen266
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
 pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen271
-\pgf@sys@shading@range@num=\count311
-\pgf@shadingcount=\count312
+\pgf@max=\dimen267
+\pgf@sys@shading@range@num=\count308
+\pgf@shadingcount=\count309
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
 pgfcoreimage.code.tex
@@ -735,7 +717,7 @@ File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
 pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfexternal@startupbox=\box66
+\pgfexternal@startupbox=\box65
 ))
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/
 pgfcorelayers.code.tex
@@ -756,7 +738,7 @@ File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgf
 moduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfnodeparttextbox=\box67
+\pgfnodeparttextbox=\box66
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgf
 moduleplot.code.tex
@@ -765,8 +747,8 @@ File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility
 /pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen272
-\pgf@nodesepend=\dimen273
+\pgf@nodesepstart=\dimen268
+\pgf@nodesepend=\dimen269
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pgf/compatibility
 /pgfcomp-version-1-18.sty
@@ -788,8 +770,8 @@ Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
 
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmat
 h.code.tex)
-\pgffor@iter=\dimen274
-\pgffor@skip=\dimen275
+\pgffor@iter=\dimen270
+\pgffor@skip=\dimen271
 \pgffor@stack=\toks41
 \pgffor@toks=\toks42
 ))
@@ -800,34 +782,34 @@ Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/libraries/p
 gflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@plot@mark@count=\count313
-\pgfplotmarksize=\dimen276
+\pgf@plot@mark@count=\count310
+\pgfplotmarksize=\dimen272
 )
-\tikz@lastx=\dimen277
-\tikz@lasty=\dimen278
-\tikz@lastxsaved=\dimen279
-\tikz@lastysaved=\dimen280
-\tikz@lastmovetox=\dimen281
-\tikz@lastmovetoy=\dimen282
-\tikzleveldistance=\dimen283
-\tikzsiblingdistance=\dimen284
-\tikz@figbox=\box68
-\tikz@figbox@bg=\box69
-\tikz@tempbox=\box70
-\tikz@tempbox@bg=\box71
-\tikztreelevel=\count314
-\tikznumberofchildren=\count315
-\tikznumberofcurrentchild=\count316
-\tikz@fig@count=\count317
+\tikz@lastx=\dimen273
+\tikz@lasty=\dimen274
+\tikz@lastxsaved=\dimen275
+\tikz@lastysaved=\dimen276
+\tikz@lastmovetox=\dimen277
+\tikz@lastmovetoy=\dimen278
+\tikzleveldistance=\dimen279
+\tikzsiblingdistance=\dimen280
+\tikz@figbox=\box67
+\tikz@figbox@bg=\box68
+\tikz@tempbox=\box69
+\tikz@tempbox@bg=\box70
+\tikztreelevel=\count311
+\tikznumberofchildren=\count312
+\tikznumberofcurrentchild=\count313
+\tikz@fig@count=\count314
 
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/modules/pgf
 modulematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfmatrixcurrentrow=\count318
-\pgfmatrixcurrentcolumn=\count319
-\pgf@matrix@numberofcolumns=\count320
+\pgfmatrixcurrentrow=\count315
+\pgfmatrixcurrentcolumn=\count316
+\pgf@matrix@numberofcolumns=\count317
 )
-\tikz@expandcount=\count321
+\tikz@expandcount=\count318
 
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pgf/frontendlay
 er/tikz/libraries/tikzlibrarytopaths.code.tex
@@ -838,18 +820,18 @@ er/tikz/libraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count322
-\calc@Bcount=\count323
-\calc@Adimen=\dimen285
-\calc@Bdimen=\dimen286
-\calc@Askip=\skip61
-\calc@Bskip=\skip62
+\calc@Acount=\count319
+\calc@Bcount=\count320
+\calc@Adimen=\dimen281
+\calc@Bdimen=\dimen282
+\calc@Askip=\skip60
+\calc@Bskip=\skip61
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count324
-\calc@Cskip=\skip63
+\calc@Ccount=\count321
+\calc@Cskip=\skip62
 )
-\c@@todonotes@numberoftodonotes=\count325
+\c@@todonotes@numberoftodonotes=\count322
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/doublestroke/dsfo
 nt.sty
@@ -860,31 +842,31 @@ Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
-\col@sep=\dimen287
-\ar@mcellbox=\box72
-\extrarowheight=\dimen288
+\col@sep=\dimen283
+\ar@mcellbox=\box71
+\extrarowheight=\dimen284
 \NC@list=\toks43
-\extratabsurround=\skip64
-\backup@length=\skip65
-\ar@cellbox=\box73
+\extratabsurround=\skip63
+\backup@length=\skip64
+\ar@cellbox=\box72
 )
 \everycr=\toks44
-\minrowclearance=\skip66
+\minrowclearance=\skip65
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow
 .sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
-\multirow@colwidth=\skip67
-\multirow@cntb=\count326
-\multirow@dima=\skip68
-\bigstrutjot=\dimen289
+\multirow@colwidth=\skip66
+\multirow@cntb=\count323
+\multirow@dima=\skip67
+\bigstrutjot=\dimen285
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.s
 ty
-\wrapoverhang=\dimen290
-\WF@size=\dimen291
-\c@WF@wrappedlines=\count327
-\WF@box=\box74
+\wrapoverhang=\dimen286
+\WF@size=\dimen287
+\c@WF@wrappedlines=\count324
+\WF@box=\box73
 \WF@everypar=\toks45
 Package: wrapfig 2003/01/31  v 3.6
 )
@@ -903,38 +885,38 @@ Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth
 .sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box75
-\sift@deathcycles=\count328
-\@vwid@loff=\dimen292
-\@vwid@roff=\dimen293
+\@vwid@box=\box74
+\sift@deathcycles=\count325
+\@vwid@loff=\dimen288
+\@vwid@roff=\dimen289
 )
-\c@taburow=\count329
-\tabu@nbcols=\count330
-\tabu@cnt=\count331
-\tabu@Xcol=\count332
-\tabu@alloc=\count333
-\tabu@nested=\count334
-\tabu@target=\dimen294
-\tabu@spreadtarget=\dimen295
-\tabu@naturalX=\dimen296
-\tabucolX=\dimen297
-\tabu@Xsum=\dimen298
-\extrarowdepth=\dimen299
-\abovetabulinesep=\dimen300
-\belowtabulinesep=\dimen301
-\tabustrutrule=\dimen302
+\c@taburow=\count326
+\tabu@nbcols=\count327
+\tabu@cnt=\count328
+\tabu@Xcol=\count329
+\tabu@alloc=\count330
+\tabu@nested=\count331
+\tabu@target=\dimen290
+\tabu@spreadtarget=\dimen291
+\tabu@naturalX=\dimen292
+\tabucolX=\dimen293
+\tabu@Xsum=\dimen294
+\extrarowdepth=\dimen295
+\abovetabulinesep=\dimen296
+\belowtabulinesep=\dimen297
+\tabustrutrule=\dimen298
 \tabu@thebody=\toks46
 \tabu@footnotes=\toks47
-\tabu@box=\box76
-\tabu@arstrutbox=\box77
-\tabu@hleads=\box78
-\tabu@vleads=\box79
-\tabu@cellskip=\skip69
+\tabu@box=\box75
+\tabu@arstrutbox=\box76
+\tabu@hleads=\box77
+\tabu@vleads=\box78
+\tabu@cellskip=\skip68
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/th
 reeparttable.sty
 Package: threeparttable 2003/06/13  v 3.0
-\@tempboxb=\box80
+\@tempboxb=\box79
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/t
 hreeparttablex.sty
@@ -948,66 +930,66 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 aces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 ))
-\TPTL@width=\skip70
+\TPTL@width=\skip69
 ) (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box81
-\UL@hyphenbox=\box82
-\UL@skip=\skip71
+\UL@box=\box80
+\UL@hyphenbox=\box81
+\UL@skip=\skip70
 \UL@hook=\toks48
-\UL@height=\dimen303
-\UL@pe=\count335
-\UL@pixel=\dimen304
-\ULC@box=\box83
+\UL@height=\dimen299
+\UL@pe=\count332
+\UL@pixel=\dimen300
+\ULC@box=\box82
 Package: ulem 2019/11/18
-\ULdepth=\dimen305
+\ULdepth=\dimen301
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell
 .sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen306
-\c@nlinenum=\count336
+\rotheadsize=\dimen302
+\c@nlinenum=\count333
 \TeXr@lab=\toks49
 )
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backe
 nd-pdftex.def
 File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count337
-\l__pdf_internal_box=\box84
+\l__color_backend_stack_int=\count334
+\l__pdf_internal_box=\box83
 ) (./lolog_catelog_writeup_JRSSA_major_revisions_git.aux
-\statsocwidth@b=\dimen307
-\statsocwidth@c=\dimen308
-\statsocwidth@d=\dimen309
-\statsocwidth@e=\dimen310
-\statsocwidth@f=\dimen311
+\statsocwidth@b=\dimen303
+\statsocwidth@c=\dimen304
+\statsocwidth@d=\dimen305
+\statsocwidth@e=\dimen306
+\statsocwidth@f=\dimen307
 )
 \openout1 = `lolog_catelog_writeup_JRSSA_major_revisions_git.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 139.
-LaTeX Font Info:    ... okay on input line 139.
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 99.
+LaTeX Font Info:    ... okay on input line 99.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 9
+9.
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 139.
-Package hyperref Info: Link coloring OFF on input line 139.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 99.
+Package hyperref Info: Link coloring OFF on input line 99.
 
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.
 sty
@@ -1021,15 +1003,15 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count338
+\c@section@level=\count335
 )
-LaTeX Info: Redefining \ref on input line 139.
-LaTeX Info: Redefining \pageref on input line 139.
-LaTeX Info: Redefining \nameref on input line 139.
+LaTeX Info: Redefining \ref on input line 99.
+LaTeX Info: Redefining \pageref on input line 99.
+LaTeX Info: Redefining \nameref on input line 99.
 (./lolog_catelog_writeup_JRSSA_major_revisions_git.out) (./lolog_catelog_writeu
 p_JRSSA_major_revisions_git.out)
-\@outlinefile=\write5
-\openout5 = `lolog_catelog_writeup_JRSSA_major_revisions_git.out'.
+\@outlinefile=\write4
+\openout4 = `lolog_catelog_writeup_JRSSA_major_revisions_git.out'.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1067,53 +1049,53 @@ p_JRSSA_major_revisions_git.out)
 
 [1{c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pd
 ftex.map}] [2]
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 296.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 256.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-96.
+56.
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-96.
+56.
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-296.
+256.
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-296.
+256.
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <11> on input line 296.
+(Font)              <11> on input line 256.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.69997> on input line 296.
+(Font)              <7.69997> on input line 256.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.5> on input line 296.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 29
+(Font)              <5.5> on input line 256.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 25
 6.
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 296.
+(Font)              size <5> substituted on input line 256.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 296
+LaTeX Font Info:    Trying to load font information for U+msa on input line 256
 .
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 296
+LaTeX Font Info:    Trying to load font information for U+msb on input line 256
 .
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 29
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 25
 6.
 
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd
@@ -1121,34 +1103,38 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 296.
+(Font)              size <5> substituted on input line 256.
 
 [3]
-LaTeX Font Info:    Trying to load font information for U+dsrom on input line 3
-12.
+LaTeX Font Info:    Trying to load font information for U+dsrom on input line 2
+72.
 
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/doublestroke/Udsr
 om.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) [4]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-89.
+49.
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [5] [6]
-Overfull \hbox (48.67105pt too wide) in alignment at lines 486--538
+)
+
+LaTeX Warning: Reference `app:code' on page 5 undefined on input line 358.
+
+[5] [6]
+Overfull \hbox (48.67105pt too wide) in alignment at lines 446--498
  [] [] [] [] [] [] 
  []
 
 [7] [8]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 623.
+(Font)              <10> on input line 583.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 623.
+(Font)              <7> on input line 583.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 623.
+(Font)              <5> on input line 583.
 
-Overfull \hbox (3.18597pt too wide) in paragraph at lines 647--647
+Overfull \hbox (3.18597pt too wide) in paragraph at lines 607--607
  [] 
  []
 
@@ -1156,14 +1142,14 @@ Overfull \hbox (3.18597pt too wide) in paragraph at lines 647--647
 2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.698 
+l.658 
       ]
-Overfull \hbox (3.18597pt too wide) in paragraph at lines 723--723
+Overfull \hbox (3.18597pt too wide) in paragraph at lines 683--683
  [] 
  []
 
 
-Overfull \hbox (3.18597pt too wide) in paragraph at lines 755--755
+Overfull \hbox (3.18597pt too wide) in paragraph at lines 715--715
  [] 
  []
 
@@ -1171,19 +1157,19 @@ Overfull \hbox (3.18597pt too wide) in paragraph at lines 755--755
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.796 
+l.756 
       ]
 <lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chu
-nk-6-1.pdf, id=358, 722.7pt x 433.62pt>
+nk-6-1.pdf, id=354, 722.7pt x 433.62pt>
 File: lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unname
 d-chunk-6-1.pdf Graphic file (type pdf)
 <use lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed
 -chunk-6-1.pdf>
 Package pdftex.def Info: lolog_catelog_writeup_JRSSA_major_revisions_git_files/
-figure-latex/unnamed-chunk-6-1.pdf  used on input line 835.
+figure-latex/unnamed-chunk-6-1.pdf  used on input line 795.
 (pdftex.def)             Requested size: 418.251pt x 250.9506pt.
 
-Overfull \hbox (28.19841pt too wide) in paragraph at lines 861--861
+Overfull \hbox (28.19841pt too wide) in paragraph at lines 821--821
  [] 
  []
 
@@ -1191,137 +1177,134 @@ Overfull \hbox (28.19841pt too wide) in paragraph at lines 861--861
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.882 
+l.842 
       ] [13pdfTeX warning (ext4): destination with the same identifier (name{ta
 ble.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.882 
+l.842 
       pdfTeX warning (ext4): destination with the same identifier (name{figure.
 1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.882 
+l.842 
        <./lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/un
 named-chunk-6-1.pdf>]
 <lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chu
-nk-7-1.pdf, id=388, 722.7pt x 433.62pt>
+nk-7-1.pdf, id=384, 722.7pt x 433.62pt>
 File: lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unname
 d-chunk-7-1.pdf Graphic file (type pdf)
 <use lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed
 -chunk-7-1.pdf>
 Package pdftex.def Info: lolog_catelog_writeup_JRSSA_major_revisions_git_files/
-figure-latex/unnamed-chunk-7-1.pdf  used on input line 885.
+figure-latex/unnamed-chunk-7-1.pdf  used on input line 845.
 (pdftex.def)             Requested size: 418.251pt x 250.9506pt.
 [14pdfTeX warning (ext4): destination with the same identifier (name{table.6}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.926 
+l.886 
       ] [15pdfTeX warning (ext4): destination with the same identifier (name{fi
 gure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.940 \item I
+l.900 \item I
              s a better fit achieved with LOLOG than published ERGM? If this...
  <./lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-
 chunk-7-1.pdf>]
-Overfull \hbox (62.90903pt too wide) in alignment at lines 956--1008
+Overfull \hbox (62.90903pt too wide) in alignment at lines 916--968
  [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 [16] [17] [18]
 
-LaTeX Warning: Command \" invalid in math mode on input line 1128.
+LaTeX Warning: Command \" invalid in math mode on input line 1088.
 
 
-LaTeX Warning: Command \" invalid in math mode on input line 1128.
+LaTeX Warning: Command \" invalid in math mode on input line 1088.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 1130.
+LaTeX Warning: Command \' invalid in math mode on input line 1090.
 
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <11> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1143.
-[19]
 <lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chu
-nk-10-1.pdf, id=460, 722.7pt x 433.62pt>
+nk-9-1.pdf, id=448, 722.7pt x 433.62pt>
+File: lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unname
+d-chunk-9-1.pdf Graphic file (type pdf)
+<use lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed
+-chunk-9-1.pdf>
+Package pdftex.def Info: lolog_catelog_writeup_JRSSA_major_revisions_git_files/
+figure-latex/unnamed-chunk-9-1.pdf  used on input line 1104.
+(pdftex.def)             Requested size: 418.251pt x 250.9506pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chu
+nk-10-1.pdf, id=449, 722.7pt x 433.62pt>
 File: lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unname
 d-chunk-10-1.pdf Graphic file (type pdf)
 <use lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed
 -chunk-10-1.pdf>
 Package pdftex.def Info: lolog_catelog_writeup_JRSSA_major_revisions_git_files/
-figure-latex/unnamed-chunk-10-1.pdf  used on input line 1175.
+figure-latex/unnamed-chunk-10-1.pdf  used on input line 1113.
 (pdftex.def)             Requested size: 418.251pt x 250.9506pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chu
-nk-11-1.pdf, id=461, 722.7pt x 433.62pt>
+nk-11-1.pdf, id=450, 722.7pt x 433.62pt>
 File: lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unname
 d-chunk-11-1.pdf Graphic file (type pdf)
 <use lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed
 -chunk-11-1.pdf>
 Package pdftex.def Info: lolog_catelog_writeup_JRSSA_major_revisions_git_files/
-figure-latex/unnamed-chunk-11-1.pdf  used on input line 1184.
+figure-latex/unnamed-chunk-11-1.pdf  used on input line 1122.
 (pdftex.def)             Requested size: 418.251pt x 250.9506pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 <lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chu
-nk-12-1.pdf, id=462, 722.7pt x 433.62pt>
+nk-12-1.pdf, id=451, 722.7pt x 433.62pt>
 File: lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unname
 d-chunk-12-1.pdf Graphic file (type pdf)
 <use lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed
 -chunk-12-1.pdf>
 Package pdftex.def Info: lolog_catelog_writeup_JRSSA_major_revisions_git_files/
-figure-latex/unnamed-chunk-12-1.pdf  used on input line 1193.
+figure-latex/unnamed-chunk-12-1.pdf  used on input line 1131.
 (pdftex.def)             Requested size: 418.251pt x 250.9506pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chu
-nk-13-1.pdf, id=463, 722.7pt x 433.62pt>
-File: lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unname
-d-chunk-13-1.pdf Graphic file (type pdf)
-<use lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed
--chunk-13-1.pdf>
-Package pdftex.def Info: lolog_catelog_writeup_JRSSA_major_revisions_git_files/
-figure-latex/unnamed-chunk-13-1.pdf  used on input line 1202.
-(pdftex.def)             Requested size: 418.251pt x 250.9506pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[20] [21pdfTeX warning (ext4): destination with the same identifier (name{figur
+[19] [20pdfTeX warning (ext4): destination with the same identifier (name{figur
 e.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1265 
+l.1163 \subsection
+                  {Junior High} <./lolog_catelog_writeup_JRSSA_major_revisions_
+git_files/figure-latex/unnamed-chunk-9-1.pdf>] [21pdfTeX warning (ext4): destin
+ation with the same identifier (name{figure.4}) has been already used, duplicat
+e ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1194 
         <./lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/u
 nnamed-chunk-10-1.pdf>] [22pdfTeX warning (ext4): destination with the same ide
-ntifier (name{figure.4}) has been already used, duplicate ignored
+ntifier (name{figure.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1293 W
-        e were able to recreate the published ERGM and fit LOLOG model with the
- <./lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-
-chunk-11-1.pdf>] [23pdfTeX warning (ext4): destination with the same identifier
- (name{figure.5}) has been already used, duplicate ignored
+l.1219 T
+        he published fitting focused on structural terms, including nodal <./lo
+log_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chunk-
+11-1.pdf>] [23pdfTeX warning (ext4): destination with the same identifier (name
+{figure.6}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1321 W
-        e were not able to fit LOLOG models using the terms in the published <.
-/lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chu
-nk-12-1.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[24pdfTeX warning (ext4): destination with the same identifier (name{figure.6})
- has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1353 
+l.1249 
         <./lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/u
-nnamed-chunk-13-1.pdf>] [25] [26] [27] (./lolog_catelog_writeup_JRSSA_major_rev
-isions_git.bbl [28]
+nnamed-chunk-12-1.pdf>] [24] [25] [26] [27] (./lolog_catelog_writeup_JRSSA_majo
+r_revisions_git.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 49--52
 []\T1/lmr/m/n/11 Fellows, I. (2018a).  La-tent or-der lo-gis-tic (lolog) graph 
 mod-els.
@@ -1331,29 +1314,32 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 8
 3.
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [29] [30]) [31] (./lolog_catelog_writeup_JRSSA_major_revisions_git.aux
-\statsocwidth@b=\dimen312
-\statsocwidth@c=\dimen313
-\statsocwidth@d=\dimen314
-\statsocwidth@e=\dimen315
-\statsocwidth@f=\dimen316
+) [28] [29]) [30] (./lolog_catelog_writeup_JRSSA_major_revisions_git.aux
+\statsocwidth@b=\dimen308
+\statsocwidth@c=\dimen309
+\statsocwidth@d=\dimen310
+\statsocwidth@e=\dimen311
+\statsocwidth@f=\dimen312
 )
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `lolog_catelog_writeup_JRSSA_major_revisions_
 git.out' has not changed.
-(rerunfilecheck)             Checksum: 3162119316C5DACA2308C1D427B45AD5;5399.
+(rerunfilecheck)             Checksum: 526CB51128CCBD0A2E8006A7C2B740F2;5133.
  ) 
 Here is how much of TeX's memory you used:
- 23429 strings out of 480502
- 427706 string characters out of 5897998
- 747235 words of memory out of 5000000
- 40445 multiletter control sequences out of 15000+600000
- 469871 words of font info for 92 fonts, out of 8000000 for 9000
+ 22958 strings out of 480502
+ 420486 string characters out of 5897998
+ 737240 words of memory out of 5000000
+ 39986 multiletter control sequences out of 15000+600000
+ 472232 words of font info for 91 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,23n,97p,901b,501s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,23n,97p,901b,485s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1
 .enc}{c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-
 ec.enc}{c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/l
@@ -1381,17 +1367,15 @@ nyTeX/texmf-dist/fonts/type1/public/lm/lmsso12.pfb><c:/Users/Duncan/AppData/Roa
 ming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/Duncan/AppDa
 ta/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy6.pfb><c:/Users/Duncan/
 AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/Users/Du
-ncan/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/Us
-ers/Duncan/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-<c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtti
-10.pfb><c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/a
-msfonts/symbols/msbm10.pfb><c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/
-fonts/type1/public/rsfs/rsfs10.pfb>
-Output written on lolog_catelog_writeup_JRSSA_major_revisions_git.pdf (31 pages
-, 608504 bytes).
+ncan/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb><c:/Us
+ers/Duncan/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbo
+ls/msbm10.pfb><c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/p
+ublic/rsfs/rsfs10.pfb>
+Output written on lolog_catelog_writeup_JRSSA_major_revisions_git.pdf (30 pages
+, 559520 bytes).
 PDF statistics:
- 719 PDF objects out of 1000 (max. 8388607)
- 617 compressed objects within 7 object streams
- 129 named destinations out of 1000 (max. 500000)
- 307 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 699 PDF objects out of 1000 (max. 8388607)
+ 602 compressed objects within 7 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 299 words of extra memory for PDF output out of 10000 (max. 10000000)
 

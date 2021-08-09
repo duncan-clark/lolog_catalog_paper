@@ -39,46 +39,6 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -1136,39 +1096,17 @@ to reproducibility of research in its many forms.
 \appendix
 \appendixpage
 \addappheadtotoc
-\section{R code for fitting LOLOG and ERGM models}\label{app:code}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(statnet)}
-\KeywordTok{library}\NormalTok{(lolog)}
-
-\CommentTok{# Example code for fitting ERGM and LOLOG model to network object net}
-\CommentTok{# net has nodal covariates node_1, and edge covariates edge_1}
-
-\CommentTok{# Fit the ERGM model with ergm package}
-\NormalTok{fitted_ergm <-}\StringTok{ }\KeywordTok{ergm}\NormalTok{(net }\OperatorTok{~}\StringTok{ }\NormalTok{edges }\OperatorTok{+}\StringTok{ }
-\StringTok{                          }\KeywordTok{gwesp}\NormalTok{(}\FloatTok{0.5}\NormalTok{,}\DataTypeTok{fixed =} \OtherTok{TRUE}\NormalTok{) }\OperatorTok{+}\StringTok{ }
-\StringTok{                          }\KeywordTok{gwdsp}\NormalTok{(}\FloatTok{0.5}\NormalTok{,}\DataTypeTok{fixed =} \OtherTok{TRUE}\NormalTok{) }\OperatorTok{+}
-\StringTok{                          }\KeywordTok{nodecov}\NormalTok{(}\StringTok{"node_1"}\NormalTok{) }\OperatorTok{+}
-\StringTok{                          }\KeywordTok{edgecov}\NormalTok{(}\StringTok{"edge_1"}\NormalTok{))}
-
-\CommentTok{#summarise the ergm model}
-\KeywordTok{summary}\NormalTok{(fitted_ergm)}
-
-\CommentTok{# Fit the lolog model with LOLOG package}
-\NormalTok{fitted_lolog <-}\StringTok{ }\KeywordTok{lolog}\NormalTok{(net }\OperatorTok{~}\StringTok{ }\NormalTok{edges }\OperatorTok{+}\StringTok{ }
-\StringTok{                            }\KeywordTok{gwdeg}\NormalTok{(}\FloatTok{0.5}\NormalTok{) }\OperatorTok{+}
-\StringTok{                            }\KeywordTok{gwesp}\NormalTok{(}\FloatTok{0.5}\NormalTok{) }\OperatorTok{+}\StringTok{ }
-\StringTok{                            }\KeywordTok{nodeCov}\NormalTok{(}\StringTok{"node_1"}\NormalTok{) }\OperatorTok{+}\StringTok{ }
-\StringTok{                            }\KeywordTok{edgeCov}\NormalTok{(}\StringTok{"edge_1"}\NormalTok{))}
-
-\CommentTok{#summarise the lolog model}
-\KeywordTok{summary}\NormalTok{(fitted_lolog)}
-\end{Highlighting}
-\end{Shaded}
 
 \section{Additional Goodness of Fit Figures}\label{app:GOF}
+
+\begin{figure}[h]
+
+{\centering \includegraphics{lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chunk-9-1} 
+
+}
+
+\caption{\label{fig:sailer_gof_pub_odeg} Sailer's Offices ERGM and LOLOG model with published terms, out-degree Goodness of Fit}\label{fig:unnamed-chunk-9}
+\end{figure}
 
 \begin{figure}[h]
 
@@ -1176,7 +1114,7 @@ to reproducibility of research in its many forms.
 
 }
 
-\caption{\label{fig:sailer_gof_pub_odeg} Sailer's Offices ERGM and LOLOG model with published terms, out-degree Goodness of Fit}\label{fig:unnamed-chunk-10}
+\caption{\label{fig:sailer_gof_pub_esp} Sailer's Offices ERGM and LOLOG model with published terms, ESP Goodness of Fit}\label{fig:unnamed-chunk-10}
 \end{figure}
 
 \begin{figure}[h]
@@ -1185,7 +1123,7 @@ to reproducibility of research in its many forms.
 
 }
 
-\caption{\label{fig:sailer_gof_pub_esp} Sailer's Offices ERGM and LOLOG model with published terms, ESP Goodness of Fit}\label{fig:unnamed-chunk-11}
+\caption{\label{fig:sailer_gof_gwesp_star_odeg} Sailer's Offices LOLOG model with GWESP and stars, out-degree Goodness of Fit}\label{fig:unnamed-chunk-11}
 \end{figure}
 
 \begin{figure}[h]
@@ -1194,16 +1132,7 @@ to reproducibility of research in its many forms.
 
 }
 
-\caption{\label{fig:sailer_gof_gwesp_star_odeg} Sailer's Offices LOLOG model with GWESP and stars, out-degree Goodness of Fit}\label{fig:unnamed-chunk-12}
-\end{figure}
-
-\begin{figure}[h]
-
-{\centering \includegraphics{lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chunk-13-1} 
-
-}
-
-\caption{\label{fig:sailer_gof_gwesp_star_esp}Sailer's Offices LOLOG model with GWESP and stars, ESP Goodness of Fit}\label{fig:unnamed-chunk-13}
+\caption{\label{fig:sailer_gof_gwesp_star_esp}Sailer's Offices LOLOG model with GWESP and stars, ESP Goodness of Fit}\label{fig:unnamed-chunk-12}
 \end{figure}
 
 \section{Individual Network Modelling Comments}\label{app:comments}
