@@ -4,10 +4,10 @@
 %
 \documentclass[
 ]{statsoc}
+\usepackage{amsmath,amssymb}
 \usepackage{lmodern}
-\usepackage{amssymb,amsmath}
-\usepackage{ifxetex,ifluatex}
-\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+\usepackage{iftex}
+\ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
@@ -39,7 +39,7 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 \urlstyle{same} % disable monospaced font for URLs
-\usepackage{graphicx,grffile}
+\usepackage{graphicx}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -56,42 +56,10 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
-\title[ERGM and LOLOG Real-World Performance]{Comparing the Real-World Performance of Exponential-family Random Graph Models and Latent Order Logistic Models}
-
-% List abbreviations here, if any. Please note that it is preferred that abbreviations be defined at the first instance they appear in the text, rather than creating an abbreviations list.
-% \abbrevs{LOLOG, latent order logistic model; ERGM, Exponential Random Graph Models; MCMC, Markov Chain Monte Carlo}
-
-% Include full author names and degrees, when required by the journal.
-% Use the \authfn to add symbols for additional footnotes and present addresses, if any. Usually start with 1 for notes about author contributions; then continuing with 2 etc if any author has a different present address.
-\author[Duncan A. Clark]{Duncan A. Clark}
-% \address{Duncan A. Clark, Department Of Statistics, University of California, Los Angeles, California, 90095}
-\address{University of California - Los Angeles, Los Angeles, USA}
-\email{duncanclark@ucla.edu}
-
-\author[Mark S. Handcock]{Mark S. Handcock}
-\address{University of California - Los Angeles, Los Angeles, USA}
-
-% \presentadd[\authfn{2}]{Department, Institution, City, State or Province, Postal Code, Country}
-
-% \fundinginfo{Put funding info here}
-
-% Include the name of the author that should appear in the running header
-% \runningauthor{Author One et al.}
 \usepackage{amsmath}\usepackage{amsfonts}\usepackage{amssymb}\usepackage{mathrsfs}\usepackage{graphicx}\usepackage{float}\usepackage{url}\usepackage{epstopdf}\usepackage{booktabs}\usepackage{longtable}\usepackage{appendix}\usepackage[a4paper]{geometry}\usepackage{graphicx}\usepackage[textwidth=8em,textsize=small]{todonotes}\usepackage{amsmath}\usepackage{natbib}\usepackage{hyperref}\usepackage{xcolor}\usepackage{dsfont}\usepackage{colortbl}
-\usepackage{booktabs}
-\usepackage{longtable}
-\usepackage{array}
-\usepackage{multirow}
-\usepackage{wrapfig}
-\usepackage{float}
-\usepackage{colortbl}
-\usepackage{pdflscape}
-\usepackage{tabu}
-\usepackage{threeparttable}
-\usepackage{threeparttablex}
-\usepackage[normalem]{ulem}
-\usepackage{makecell}
-\usepackage{xcolor}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 
 \author{}
 \date{\vspace{-2.5em}}
@@ -117,10 +85,18 @@
 \newcommand{\logit}{{\rm logit}}
 \newcommand{\MOM}{{\rm MOM}}
 
+\begin{verbatim}
+## Error in library(ggduncan): there is no package called 'ggduncan'
+\end{verbatim}
+
+\begin{verbatim}
+## Error in library(lolog.catelog.helper): there is no package called 'lolog.catelog.helper'
+\end{verbatim}
+
 \setcounter{secnumdepth}{4}
 
 \begin{abstract}
-Exponential-family Random Graph models (ERGM) are widely used in social network analysis when modelling data on the relations between actors. ERGMs are typically interpreted as a snapshot of a network. The recently proposed Latent Order Logistic model (LOLOG) directly allows for a latent network formation process. We assess the real-world performance of these models when applied to typical networks modeled by researchers. Specifically, 
+Exponential-family Random Graph models (ERGM) are widely used in social network analysis when modelling data on the relations between actors. ERGMs are typically interpreted as a snapshot of a network. The recently proposed Latent Order Logistic model (LOLOG) directly allows for a latent network formation process. We assess the real-world performance of these models when applied to typical networks modelled by researchers. Specifically, 
 we model data from the ensemble of articles in the journal \textit{Social Networks} with published ERGM fits, and compare the ERGM fit to a comparable LOLOG fit. We demonstrate that the LOLOG models are, in general, in qualitative agreement with the ERGM models, and provide at least as good a model fit. In addition they are typically faster and easier to fit to data, without the tendency for degeneracy that plagues ERGMs.
 Our results support the general use of LOLOG models in circumstances where ERGM are considered.
 \end{abstract}
@@ -151,7 +127,7 @@ mass on a small subset of graphs, especially those which are not similar
 to realistic networks for that application.
 
 Much progress has been made on managing model degeneracy by introducing
-local neigbourhood structures \citep{schweinbergerhandcock2015} or
+local neighbourhood structures \citep{schweinbergerhandcock2015} or
 tapering \citep{fellowshandcock2017}. The presence of degeneracy in many
 fitted ERGMs motivates the search for alternative model classes with
 similar or complementary modelling capacity that are less susceptible to
@@ -194,7 +170,7 @@ perspective from that of the model viewpoint (i.e., given we have a
 model, what can we fit with it?) to a data-centric view point (i.e.,
 given that this is the data we have, what are the best modelling
 approaches?) The latter is the question facing the real-world users of
-these models, while the ``inverse problem" addressed by the former is
+these models, while the ``inverse problem'' addressed by the former is
 commonly taken as it does not require the population of networks to be
 specified.
 
@@ -205,7 +181,7 @@ for publishing social network analyses, \textit{Social Networks}
 \citep{socialnetworks}. \textit{Social Networks} is an interdisciplinary
 journal for those with ``interest in the study of the empirical
 structure of social relations and associations that may be expressed in
-network form''. While the sub-population of networks in
+network form'\,'. While the sub-population of networks in
 \textit{Social Networks} for which ERGMs have been fit is a sample of
 the population of interest, we believe that it is an salient and
 (non-statistical) representative sub-population of the broader
@@ -253,7 +229,7 @@ regarding the utility of the LOLOG model.
 
 \section{ERGM and LOLOG Model Classes}\label{sec:LOLOG}
 
-Let \(Y\) be a random graph whose realization is
+Let \(Y\) be a random graph whose realisation is
 \(y \in \mathscr{Y} = \lbrace a \in \mathbb{R}^{n \times n} \quad \vert \quad \forall i,j \quad y_{i,i} = 0 \quad y_{i,j} \in \lbrace 0,1 \rbrace\rbrace\).
 We regard the number of nodes and any nodal covariates as fixed and
 known. For undirected networks the additional restriction that
@@ -270,7 +246,7 @@ LOLOG and ERGM are alternative specifications of the distribution of
 p_{E}(y\vert \theta) = \frac{\exp(\theta\cdot g(y))}{c({\theta})}~~~~~ y\in \mathscr{Y}
 \end{align} \noindent where \(g(y)\) is a \(d-\)vector valued function
 defining a set of sufficient statistics; \(\theta \in \mathds{R}^{d}\)
-is a vector of parameters; and \(c(\theta)\) the normalizing constant.
+is a vector of parameters; and \(c(\theta)\) the normalising constant.
 Each ERGM is defined by the choice of sufficient statistics. These are
 chosen by the researcher, depending on domain knowledge, to specify the
 generating social processes. They can be any statistical summary of
@@ -278,15 +254,18 @@ network properties and are typically motivated by social theory
 \citep{goodkittsmorris09} or symmetry arguments \citep{str86}. In this
 way, ERGMs constitute a family of models across different choices of the
 sufficient statistics.\\
-Typically graph statistics are the density and degree distribution, as
-well as nodal or edge covariate terms such as sociability and homophily
+Typically graph statistics are the density and degree counts, as well as
+nodal or edge covariate terms such as sociability and homophily
 \citep{ergmtermsjss}. Geometrically weighed edgewise shared partner
 (GWESP) and geometrically weighted degree (GWDEG) terms are often
 included \citep{snijders2006} as they capture complex structure while
-reducing the effects of near degeneracy \citep{Handcock2003}. Regardless
-of which sufficient statistics are used, the ERGM will have the maximal
-entropy of any distribution satisfying the \(d\)-dimensional mean
-constraints placed on \(g(y), E[g(y)]=\mu\). LOLOG models posit the
+reducing the effects of near degeneracy \citep{Handcock2003}. A very
+large number of terms are used by researchers in applications. Explicit
+definitions of almost all terms used in this paper can be found in
+\cite{ergmtermsjss} or the documentation of \cite{ergm_3_9_4}.
+Regardless of which sufficient statistics are used, the ERGM will have
+the maximal entropy of any distribution satisfying the \(d\)-dimensional
+mean constraints placed on \(g(y), E[g(y)]=\mu\). LOLOG models posit the
 existence of a latent discrete temporal dimension, \(t=1, \ldots, |y|\)
 so that the edges form in a sequence. \cite{Fellows2018} defines the
 latent random variables \(Y_{t},\ t=1, \ldots,\) representing the
@@ -567,76 +546,108 @@ people/nodes, respectively.
 
 The research question of interest in \cite{Sailer2012} was the effect of
 spatial distance in the formation of social interactions within an
-office environment. Initially for each network the authors fit a model
-using the edges, GWESP and mutual terms, together with a
-matching-on-nodal-covariate term on floor of the building and team. A
-usefulness term was added as an edge-covariate term, with the value for
-dyad \((i,j)\) being the person \(i\) self reported perception of the
-usefulness of person \(j\). The best fitting model was then selected
-using the Akaike Information Criterion (AIC) and then a variety of
-different distance metrics were added individually as an edge-covariate.
-The best model in terms of AIC was once again selected and analysed.
-Notably no analysis of the goodness of fit for the models was provided.
+office environment. The authors specified an ERGM with terms to
+represent the potential complex structure. These are listed in the first
+column of Table 2 and detailed here. \%an edges, GWESP and mutual terms,
+together with a matching-on-nodal-covariate term on floor of the
+building and team. The edges term is the number of social interactions
+and represents the overall propensity for social interactions. It has
+the same role as an intercept term in regression (that is, represents
+the overall level of social interactions). The Reciprocity term measures
+the propensity for both people in a dyad to report social interaction
+with the other. The GWESP term, with decay parameter 0.5, s an
+integrated measure of the transitivity of social interactions
+\citep[See][for a detailed
+explanation]{snijders2006}. The Usefulness term is an edge-covariate
+term, with value the sum over edges of the usefulness measure: for dyad
+\((i,j)\) being person \(i\)'s self reported perception of the
+usefulness of person \(j\). It measures the direct dependence of the
+propensity to have a social interaction on the usefulness of the person
+nominated. The Team Match term is the number of ties between people from
+the same team. It measures the propensity of teams to influence the
+density of social interaction. Floor Match is similar to Team Match,
+except it measures the importance of being on the same floor for social
+interaction. The metric distance term is the sum of the shortest walking
+distance in meters between the socially interacting peoples normal place
+of work. Similarly, the Topo distance is the sum of measures of how far
+the desks could be perceived to be apart given the topography of the
+office (See \cite{Sailer2012} for precise definitions). The coefficients
+of the metric and Topo distances measure the increase in log-odds of a
+social interaction given the distance they are apart. These coefficients
+are generally negative, indicating that social interactions become less
+common as the distance increases.
+
+The best fitting model was then selected using the Akaike Information
+Criterion (AIC) and then a variety of different distance metrics were
+added individually as edge-covariates. The best model in terms of AIC
+was once again selected and analysed. Notably no analysis of the
+goodness of fit for the models was provided.
 
 \subsection{Model Fits}
 
-\begin{table}
+\begin{verbatim}
+## Error in setwd("C:/Users/Duncan/Documents/Academics/journal_submissions/2020/LOLOG_Catalog/1_18_OfficeLayout"): cannot change working directory
+\end{verbatim}
 
-\caption{\label{tab:unnamed-chunk-2}\label{tab:sailer_ergm_pub} Office Layout ERGM fits as per the published results. In all cases the selected measure of distance is negative and significant suggesting that close office workers, are more likely to interact, even after allowing for team, floor, usefulness as well as social structure in the form of reciprocity and transitivity.}
-\centering
-\begin{threeparttable}
-\begin{tabular}[t]{lllll}
-\toprule
-  & University 2005 & University 2008 & Research Institute & Publisher\\
-\midrule
-\rowcolor{gray!6}  Edges & -3.4 (0.37)*** & -4.41 (0.2)*** & -4.1 (0.12)*** & -5.07 (0.15)***\\
-Reciprocity & 0.38 (0.45) & 0.62 (0.31)*** & 2.39 (0.2)*** & -1.26 (0.19)***\\
-\rowcolor{gray!6}  GWESP(0.5) & 1.36 (0.14)*** & 1.24 (0.11)*** & 0.92 (0.07)*** & 2.09 (0.09)***\\
-Usefulness & 0.7 (0.15)*** & 0.54 (0.11)*** & 0.81 (0.04)*** & 1.31 (0.05)***\\
-\rowcolor{gray!6}  Team Match & 0.78 (0.18)*** & 0.56 (0.1)*** & NA & NA\\
-\addlinespace
-Floor Match & 0.15 (0.26) & 0.58 (0.14)*** & NA & NA\\
-\rowcolor{gray!6}  Metric Distance & -0.04 (0.01)*** & -0.01 (0)*** & -0.01 (0)*** & NA\\
-Topo Distance & NA & NA & NA & -0.06 (0)***\\
-\bottomrule
-\end{tabular}
-\begin{tablenotes}
-\item *** p-value < 0.001 , ** p-value < 0.01, * p-value < 0.5
-\end{tablenotes}
-\end{threeparttable}
-\end{table}
+\begin{verbatim}
+## Error in readChar(con, 5L, useBytes = TRUE): cannot open the connection
+\end{verbatim}
+
+\begin{verbatim}
+## Error in readChar(con, 5L, useBytes = TRUE): cannot open the connection
+\end{verbatim}
+
+\begin{verbatim}
+## Error in eval(parse(text = paste("ergm_", x, "_3$summary", sep = ""))): object 'ergm_1_3' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in match.fun(FUN): object 'summary_1line_ergm' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in lapply(tmp, FUN = function(x) {: object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in merge_all(tmp): object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in colnames(tmp) <- c("University 2005", "University 2008", "Research Institute", : object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in eval(expr, envir, enclos): object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in rownames(tmp) <- rownames: object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in kable(tmp, format = "latex", booktabs = "T", caption = "\\label{tab:sailer_ergm_pub} Office Layout ERGM fits as per the published results. In all cases the selected measure of distance is negative and significant suggesting that close office workers, are more likely to interact, even after allowing for team, floor, usefulness as well as social structure in the form of reciprocity and transitivity."): object 'tmp' not found
+\end{verbatim}
 
 We were able to recreate the selected ERGM fit for all four networks,
-shown in Table \ref{tab:sailer_ergm_pub}. The edges term represents the
-overall propensity for social interactions and has the same role as an
-intercept term in regression. The Team Match counts the number of ties
-between people from the same team. It measure the propensity of teams to
-influence the density of social interaction. Its coefficient is positive
-for all four networks, indicating that the log-odds of a social
-interaction existing is positive if the social interaction is within the
-same team (as distinct from between people in different teams). Floor
-match is similar to Team match, except to measures the importance of
-being on the same floor for social interation. The Reciprocity term
-measures the propensity for both people in a dyad to report social
-interaction with the other. The coefficient is positve in two of the
+shown in Table \ref{tab:sailer_ergm_pub}. The Reciprocity coefficient is
+positive in two of the networks, indicating that the conditional
+log-odds of a social interaction is positive if the social interaction
+is mutual. The GWESP coefficient is positive for all four networks,
+indicating that the log-odds of a social interaction existing is
+positive if the social interaction increases this measure of
+transitivity. The Usefulness coefficient is positive for all four
 networks, indicating that the log-odds of a social interaction existing
-is positive if the social interaction is mutual. The GWESP term, with
-decay parameter 0.5, measures the transitivity of social interactions.
-It is positive for all four networks, indicating that the log-odds of a
-social interaction existing is positive if the social interaction
-increases transitivity. The Usefulness term adds a graph statistic being
-the sum over all social interactions of the usefulness of the person
-nominated. Its coefficient is positive for all four networks, indicating
-that the log-odds of a social interaction existing is positively related
-to the usefulness of the nominated person. The metric distance term is
-the shortest walking distance in meters between the people.s normal
-place of work. The Topo distance incorporates measures of how far the
-desks could be perscieved to be apart given the topography of the office
-(See \cite{Sailer2012} for precise definitions). Their coefficients
-measures the increase in log-odds of a social interaction given the
-distance they are apart. These coeffients are generally negative,
-indicating that social interactions become less common as the distance
-increases.
+is positively related to the usefulness of the nominated person. The
+Team Match coefficient is positive for all four networks, indicating
+that the log-odds of a social interaction existing is positive if the
+social interaction is within the same team (as distinct from between
+people in different teams). Floor Match coefficients are also positive,
+indicating that the log-odds of a social interaction existing is
+positive if the social interaction is within the same floor (as distinct
+from between people in different floors). The metric and Topo
+coefficients are generally negative, indicating that social interactions
+become less common as the distance increases.
 
 Overall, the \cite{Sailer2012} concluded that daily social interactions
 of people in offices exhibit a tendency for mutuality and social
@@ -647,72 +658,85 @@ distance apart plays a role in all cases, with social interactions more
 likely for people closer together.
 
 We were able to obtain LOLOG fits with the same covariates, as the ERGM
-fits for all networks, we summarize the fits in Table
+fits for all networks, we summarise the fits in Table
 \ref{tab:sailer_lolog_pub}. In addition we show the LOLOG fit using
 GWESP, 2- and 3- in- and out-stars, together with all covariate matches
-and metric distance in Table \ref{tab:sailer_lolog_gwesp_star}. As noted
-in Section 2.2, the qualitiative interpretation of the LOLOG
-coefficients is similar to ERGM with the primary difference being the
-log-odds is conditional on the network at the point the edge is added.
-We directly compare the qualitative fits in Section 4.3.
+and metric distance in Table \ref{tab:sailer_lolog_gwesp_star}. For
+\(k=1, 2, \ldots,\) a \(k\)-in-star centred on a node \(i\) and a set of
+\(k\) different nodes \(\{i_1, \ldots, i_{k}\}\) such that the tie from
+\(i\) to \(i_{j}\) exists for \(j=1, \ldots, k\). The \(k\)-in-star
+statistic is the number of distinct \(k\)-in-stars in the network (i.e.,
+summing over the centring nodes). The \(k\)-out-star statistic is the
+same except the ties from \(i_{j}\) to \(i\) must exist for
+\(j=1, \ldots, k\) (rather than the in-ties to \(i\)). As noted in
+Section 2.2, the qualitative interpretation of the LOLOG coefficients is
+similar to ERGM with the primary difference being the log-odds is
+conditional on the network at the point the edge is added. We directly
+compare the qualitative fits in Section 4.3.
 
-\begin{table}
+\begin{verbatim}
+## Error in eval(parse(text = paste("lolog_", x, "_2$summary", sep = ""))): object 'lolog_1_2' not found
+\end{verbatim}
 
-\caption{\label{tab:unnamed-chunk-3}\label{tab:sailer_lolog_pub}Office Layout LOLOG fit with same terms as published ERGM. Shows broad quantitative agreement with the published results using ERGM in Table \ref{tab:sailer_ergm_pub}}
-\centering
-\begin{threeparttable}
-\begin{tabular}[t]{lllll}
-\toprule
-  & University 2005 & University 2008 & Research Institute & Publisher\\
-\midrule
-\rowcolor{gray!6}  Edges & -1.69 (0.38)*** & -3.67 (0.36)*** & -3.18 (0.13)*** & -1.63 (0.09)***\\
-Reciprocity & 1.99 (0.34)*** & 1.96 (0.31)*** & 3.9 (0.25)*** & 0.64 (0.2)***\\
-\rowcolor{gray!6}  GWESP(0.5) & 0.55 (0.12)*** & 0.87 (0.13)*** & 0.73 (0.09)*** & -0.22 (0.06)***\\
-Usefulness & 1.02 (0.15)*** & 0.81 (0.14)*** & 1.21 (0.05)*** & 1.89 (0.06)***\\
-\rowcolor{gray!6}  Team Match & 1.29 (0.19)*** & 0.72 (0.19)*** & NA & NA\\
-\addlinespace
-Floor Match & -0.28 (0.3) & 1.08 (0.29)*** & NA & NA\\
-\rowcolor{gray!6}  Metric Distance & -0.07 (0.01)*** & -0.02 (0.01)*** & -0.02 (0)*** & NA\\
-Topo Distance & NA & NA & NA & -0.1 (0)***\\
-\bottomrule
-\end{tabular}
-\begin{tablenotes}
-\item *** p-value < 0.001 , ** p-value < 0.01, * p-value < 0.5
-\end{tablenotes}
-\end{threeparttable}
-\end{table}
+\begin{verbatim}
+## Error in match.fun(FUN): object 'summary_1line_lolog' not found
+\end{verbatim}
 
-\begin{table}
+\begin{verbatim}
+## Error in lapply(tmp, FUN = function(x) {: object 'tmp' not found
+\end{verbatim}
 
-\caption{\label{tab:unnamed-chunk-4}\label{tab:sailer_lolog_gwesp_star}
-      Office Layout LOLOG fit with GWESP and 2- and 3- in- and out-stars. Significant out-star terms may suggest there is social structure unaccounted for with just the published ERGM terms. Despite addtional significant structural terms, still shows broad quantitative agreement with the published results using ERGM}
-\centering
-\begin{threeparttable}
-\begin{tabular}[t]{lllll}
-\toprule
-  & University 2005 & University 2008 & Research Institute & Publisher\\
-\midrule
-\rowcolor{gray!6}  Edges & -3.2 (0.67)*** & -5.04 (0.59)*** & -4.04 (0.22)*** & -4.87 (1.19)***\\
-Reciprocity & 2.03 (0.77)*** & 1.11 (0.45)*** & 4.7 (0.52)*** & 3.16 (1.27)***\\
-\rowcolor{gray!6}  GWESP(0.5) & 0.33 (0.2) & 0.49 (0.16)*** & 0.77 (0.11)*** & 0.01 (0.26)\\
-Out-2-Star & 1.39 (0.26)*** & 0.65 (0.16)*** & 0.41 (0.07)*** & 0.69 (0.15)***\\
-\rowcolor{gray!6}  Out-3-Star & -0.28 (0.07)*** & -0.07 (0.03)*** & -0.04 (0.01)*** & -0.02 (0)***\\
-\addlinespace
-In-2-Star & 0.26 (0.22) & 0.25 (0.15) & 0.21 (0.12) & 0.73 (0.54)\\
-\rowcolor{gray!6}  In-3-Star & -0.04 (0.05) & -0.03 (0.02) & -0.09 (0.03)*** & -0.18 (0.1)\\
-Usefulness & 1.07 (0.2)*** & 0.75 (0.16)*** & 1.28 (0.07)*** & 2.98 (0.61)***\\
-\rowcolor{gray!6}  Team Match & 1.93 (0.31)*** & 1.14 (0.25)*** & NA & NA\\
-Floor Match & -0.24 (0.47) & 1.35 (0.43)*** & NA & NA\\
-\addlinespace
-\rowcolor{gray!6}  Metric Distance & -0.09 (0.01)*** & -0.02 (0.01)*** & -0.02 (0)*** & NA\\
-Topo Distance & NA & NA & NA & -0.24 (0.06)***\\
-\bottomrule
-\end{tabular}
-\begin{tablenotes}
-\item *** p-value < 0.001 , ** p-value < 0.01, * p-value < 0.5
-\end{tablenotes}
-\end{threeparttable}
-\end{table}
+\begin{verbatim}
+## Error in merge_all(tmp): object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in colnames(tmp) <- c("University 2005", "University 2008", "Research Institute", : object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in eval(expr, envir, enclos): object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in rownames(tmp) <- rownames: object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in kable(tmp, format = "latex", booktabs = "T", caption = "\\label{tab:sailer_lolog_pub}Office Layout LOLOG fit with same terms as published ERGM. Shows broad quantitative agreement with the published results using ERGM in Table \\ref{tab:sailer_ergm_pub}"): object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in eval(parse(text = paste("lolog_", x, "_9$summary", sep = ""))): object 'lolog_1_9' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in match.fun(FUN): object 'summary_1line_lolog' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in lapply(tmp, FUN = function(x) {: object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in merge_all(tmp): object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in colnames(tmp) <- c("University 2005", "University 2008", "Research Institute", : object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in eval(expr, envir, enclos): object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in rownames(tmp) <- rownames: object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in kable(tmp, format = "latex", booktabs = "T", caption = "\\label{tab:sailer_lolog_gwesp_star}\n      Office Layout LOLOG fit with GWESP and 2- and 3- in- and out-stars. Significant out-star terms may suggest there is social structure unaccounted for with just the published ERGM terms. Despite additional significant structural terms, still shows broad quantitative agreement with the published results using ERGM"): object 'tmp' not found
+\end{verbatim}
 
 We were also able to fit LOLOG models to each of the networks when the
 GWESP term is replaced with a triangle term. This is not possible with
@@ -736,13 +760,16 @@ further.
 
 We tried to fit an ERGM model with the in- and out- geometrically
 weighted degree (GWDEG) terms but this was degenerate for the University
-2005 and 2008 networks. For the Research institute and Publisher out-
-GWDEG was negative and significant, in line with the LOLOG model
-positive 2-star and negative 3-star parameters. However, the fit was
-still poor and inferior to the LOLOG model. We do not comment further on
-this, though it is reassuring that the ERGM with GWDEG gives similar
-interpretations to LOLOG with star terms. The GWDEG terms were not
-discussed in \cite{Sailer2012}.
+2005 and 2008 networks. The in-GWDEG term adds one network statistic to
+the model equal to a weighted sum of the in-degree counts with weights
+decreasing geometrically. The out-GWDEG is similar with the out-degree
+counts \citep[See][for a detailed explanation]{hunter07}. For the
+Research institute and Publisher out-GWDEG was negative and significant,
+in line with the LOLOG model positive 2-star and negative 3-star
+parameters. However, the fit was still poor and inferior to the LOLOG
+model. We do not comment further on this, though it is reassuring that
+the ERGM with GWDEG gives similar interpretations to LOLOG with star
+terms. The GWDEG terms were not discussed in \cite{Sailer2012}.
 
 We note the computation time difference in the LOLOG and ERGM parameter
 estimation. We ran each with a single core with Intel(R) Xeon(R)
@@ -754,31 +781,37 @@ experience for larger networks the performance differential between
 LOLOG and ERGM can be much greater, in particular when the ERGM MCMC
 simulation is computationally expensive.
 
-\begin{table}
+\begin{verbatim}
+## Error in eval(parse(text = paste("lolog_", x, "_3$summary", sep = ""))): object 'lolog_1_3' not found
+\end{verbatim}
 
-\caption{\label{tab:unnamed-chunk-5}\label{tab:sailer_lolog_tri} Office Layout LOLOG fit with triangles instead of gwesp term, hows broad quantitative agreement with the published results on nodal covariates, however suggests little tendency for reciprocity and transitivity in the university networks.}
-\centering
-\begin{threeparttable}
-\begin{tabular}[t]{lllll}
-\toprule
-  & University 2005 & University 2008 & Research Institute & Publisher\\
-\midrule
-\rowcolor{gray!6}  Edges & -2.05 (0.82)*** & -3.9 (0.67)*** & -3.36 (0.15)*** & -5.4 (49.3)\\
-Reciprocity & -2.96 (5.83) & -0.08 (1.6) & 3.34 (0.36)*** & -24.8 (367.3)\\
-\rowcolor{gray!6}  Triangles & 2.69 (2.95) & 1.2 (0.73) & 0.61 (0.13)*** & 3.71 (50.63)\\
-Usefulness & 1.35 (0.53)*** & 0.83 (0.16)*** & 1.21 (0.06)*** & 6.57 (88.39)\\
-\rowcolor{gray!6}  Team Match & 1.8 (0.85)*** & 0.9 (0.35)*** & NA & NA\\
-\addlinespace
-Floor Match & -0.29 (0.88) & 1.07 (0.46)*** & NA & NA\\
-\rowcolor{gray!6}  Metric Distance & -0.1 (0.05)*** & -0.02 (0.01)*** & -0.02 (0)*** & NA\\
-Topo Distance & NA & NA & NA & -0.39 (5.82)\\
-\bottomrule
-\end{tabular}
-\begin{tablenotes}
-\item *** p-value < 0.001 , ** p-value < 0.01, * p-value < 0.5
-\end{tablenotes}
-\end{threeparttable}
-\end{table}
+\begin{verbatim}
+## Error in match.fun(FUN): object 'summary_1line_lolog' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in lapply(tmp, FUN = function(x) {: object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in merge_all(tmp): object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in colnames(tmp) <- c("University 2005", "University 2008", "Research Institute", : object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in eval(expr, envir, enclos): object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in rownames(tmp) <- rownames: object 'tmp' not found
+\end{verbatim}
+
+\begin{verbatim}
+## Error in kable(tmp, format = "latex", booktabs = "T", caption = "\\label{tab:sailer_lolog_tri} Office Layout LOLOG fit with triangles instead of gwesp term, hows broad quantitative agreement with the published results on nodal covariates, however suggests little tendency for reciprocity and transitivity in the university networks."): object 'tmp' not found
+\end{verbatim}
 
 \subsection{Goodness of Fit}
 
@@ -790,14 +823,21 @@ Figures \ref{fig:sailer_gof_pub_odeg} and \ref{fig:sailer_gof_pub_esp}
 contained in Appendix \ref{app:GOF} show the same comparison for ESP and
 out-degree.
 
-\begin{figure}
+\begin{verbatim}
+## Error in library(extrafont): there is no package called 'extrafont'
+\end{verbatim}
 
-{\centering \includegraphics{lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chunk-6-1} 
+\begin{verbatim}
+## Error in font_import(paths = "C:/Users/Duncan/Downloads/tmp", prompt = F, : could not find function "font_import"
+\end{verbatim}
 
-}
+\begin{verbatim}
+## Error in lolog_boxplot(sims_list = list(lolog_1_2$gofits[[1]]$stats[, : could not find function "lolog_boxplot"
+\end{verbatim}
 
-\caption{\label{fig:sailer_gof_pub_ideg}Sailer's Offices ERGM and LOLOG model with published terms, in-degree Goodness of Fit}\label{fig:unnamed-chunk-6}
-\end{figure}
+\begin{verbatim}
+## Error in convert_JRSS(tmp): object 'tmp' not found
+\end{verbatim}
 
 Table \ref{tab:GOF_comment_table} shows comments on the goodness of fit
 for each network, using the recreated published ERGM and the LOLOG model
@@ -840,12 +880,13 @@ network fit the out-degree distribution well and the University 2005 and
 2008 models fit well on the ESP distribution. This is an improvement in
 all cases versus the ERGM models published in \cite{Sailer2012}.
 
-\begin{figure}
-\centering
-\includegraphics{lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chunk-7-1.pdf}
-\caption{\label{fig:sailer_gof_gwesp_star_ideg}Sailer's Offices LOLOG
-model with GWESP and stars, in-degree Goodness of Fit}
-\end{figure}
+\begin{verbatim}
+## Error in lolog_boxplot(sims_list = list(lolog_1_9$gofits[[1]]$stats[, : could not find function "lolog_boxplot"
+\end{verbatim}
+
+\begin{verbatim}
+## Error in convert_JRSS(tmp): object 'tmp' not found
+\end{verbatim}
 
 \subsection{Model Comparison}
 
@@ -873,7 +914,7 @@ distribution as well and the ESP distribution. We therefore have more
 belief that inferences from these models are valid. They show similar
 conclusions to the published ERGM, though in addition we observe a
 positive significant out-2-star term and a negative significant
-out-3-star term, suggesting that there is a tendency for some peope to
+out-3-star term, suggesting that there is a tendency for some people to
 have social interactions with many more people that others. This
 tendency for super-daily interactors was not captured in the published
 ERGM fit. We also note that the lack of significant in-2-star parameter
@@ -886,28 +927,46 @@ deeper interpretation of the social interaction process.
 
 \section{Summary of Results for the Ensemble}\label{sec:results}
 
-Table \ref{tab:summary_table} provides a summary of the ERGM and LOLOG
-fits for the networks in our ensemble, the columns are binary answers
-(1=Yes,0 = No), to the following questions of interest, which are
-followed by a brief justification of our interest in them.
+The comparison of the value of models rarely will come down to a
+quantitative measure on a single dimension. The social processes that
+produce network data are typically complex and our chose of which data
+to analyse tends to favour complex structures. The models typically only
+approximate that structure and some features of the data are not
+represented in the models. Scientists that model social network data
+typically have multiple objectives with some models more suited to some
+of those objectives rather than others. Having said this, we constructed
+a rubric of criteria to assess the models, both relatively and
+absolutely. We follow each criterion with a brief justification for why
+it was included.
 
 \begin{enumerate}
-\item Are we able to recreate the published ERGM qualitatively? As a first step to ensure we were using the data correctly, so our comparison is valid.
-\item Do the recreations of published ERGM fit the network well? This is tested to assess the validity of the published ERGM results, and to assess if ERGM is a good model for the published case study.
-\item Are we able to fit LOLOG with published ERGM terms? Chosen to assess the flexibility of the LOLOG model class.
-\item Does LOLOG model with published ERGM terms fit well? Assesses the suitability of the LOLOG model with ERGM terms.
-\item Are we able to fit LOLOG model with ERGM Markov terms usually degenerate in ERGM? This helps understand if LOLOG can aid in interpretability with simpler terms that are not possible in ERGM.
-\item Is a better fit achieved with LOLOG than published ERGM? If this is true then we believe the LOLOG to be a better model for the observed data than the published ERGM
-\item Do published ERGM and best fitting LOLOG have consistent interpretation? Affirmative answers to this problem, gives some confidence that results are not simply an artefact of the chosen modeling approach.
-\item Which model do we believe to be more useful. Our opinion based on the experience fitting  and interpreting models for each network.
+\item Are we able to recreate the published ERGM qualitatively?\\
+We asked this to screen out network data where our usage differs qualitatively from the original, for whatever reason. This is to help ensure we were using the data correctly, so that our comparison is valid.
+\item Do the recreations of published ERGM fit the network well?\\
+This is to assess the validity of the published ERGM results, and to assess if ERGM is a good model for the published case study.
+\item Are we able to fit LOLOG with published ERGM terms?\\
+This is to assess the LOLOG on terms likely favourable to the ERGM. Typically, published ERGM will have undergone model selection criteria to
+choose terms that had good fit compared to other possible ERGM. This criteria assesses the flexibility of the LOLOG model class.
+\item Does LOLOG model with published ERGM terms fit well?\\
+This is an absolute measure of the LOLOG goodness-of-fit with the ERGM terms.
+\item Are we able to fit LOLOG model with ERGM Markov terms usually degenerate in ERGM?\\
+Markov terms, such as $k$-stars and triangles, often lead to near-degenerate models despite their conceptual appeal \citep{FrankStrauss1986}. This criteria assesses in the LOLOG can aid in interpretability due using simpler terms that are not possible in ERGM.
+\item Is a better fit achieved with LOLOG than the published ERGM?\\
+This is an direct absolute comparison to judge if the LOLOG is a better model for the observed data than the published ERGM.
+\item Do the published ERGM and best-fitting LOLOG model have consistent interpretations?\\
+This assesses if qualitative substantive conclusions draw from each model are consistent with the other.
+If affirmative, this gives some confidence that qualitative conclusions are not simply an artefact of the chosen modelling approach.
+\item Which model do we believe to be more useful.\\
+This is a subjective judgement criterion. A major component is the goodness-of-fit criteria (Section 2.5). These criteria measure the degree that important statistical characteristics of the network data are reproduced by the model. These focus on characteristics not explicitly in the model. A second component is the substantive interpretability of the terms. A third is the complexity of the model terms.
 \end{enumerate}
 
-TODO Mark: describe the criteria we used to decide on these questions
-
-The fits were carried out in R using the \texttt{ergm} package
-\citep{ergm_3_9_4}, and the \texttt{lolog} package \citep{LOLOG_github}.
-Where possible decay parameters were used as stated, where this was not
-available, the first option was to let \(\alpha= 0.5\).
+Table \ref{tab:summary_table} provides a summary of the ERGM and LOLOG
+model fits for the networks in our ensemble, the columns are binary
+answers (1=Yes,0 = No), to the above criteria. The fits were carried out
+in R using the \texttt{ergm} package \citep{ergm_3_9_4}, and the
+\texttt{lolog} package \citep{LOLOG_github}. For the GWESP, GWDSP and
+GWDEG terms decay parameters were used as stated. If they where not
+available, \(\alpha= 0.5\) was used.
 
 We provide brief commentary of the results overall, and provide more
 detailed modelling comments for each network in Appendix
@@ -918,58 +977,54 @@ detailed modelling comments for each network in Appendix
 \toprule
 Description & Network & Nodes & a & b & c & d & e & f & g & h\\
 \midrule
-\rowcolor{gray!6}  Add Health &  & 1618 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & LOLOG\\
+\cellcolor{gray!6}{Add Health} & \cellcolor{gray!6}{} & \cellcolor{gray!6}{1618} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{LOLOG}\\
 School Friends &  & Various &  &  &  &  &  &  &  & \\
-\rowcolor{gray!6}  Kapferer's Tailors &  & 39 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & LOLOG\\
+\cellcolor{gray!6}{Kapferer's Tailors} & \cellcolor{gray!6}{} & \cellcolor{gray!6}{39} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{LOLOG}\\
 Florentine Families &  & 16 & 1 & 1 & 1 & 1 & 1 & 1 & 0 & ERGM\\
-\rowcolor{gray!6}  German Schoolboys &  & 53 & 1 & 1 & 0 & NA & 1 & 1 & 1 & Both\\
+\cellcolor{gray!6}{German Schoolboys} & \cellcolor{gray!6}{} & \cellcolor{gray!6}{53} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{Both}\\
 \addlinespace
 Employee Voice & 1 & 27 & 0 & NA & 1 & 1 & 1 & 1 & NA & LOLOG\\
-\rowcolor{gray!6}  Employee Voice & 2 & 24 & 1 & 1 & 0 & NA & 0 & 0 & NA & ERGM\\
+\cellcolor{gray!6}{Employee Voice} & \cellcolor{gray!6}{2} & \cellcolor{gray!6}{24} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{ERGM}\\
 Employee Voice & 3 & 30 & 0 & NA & 1 & 1 & 1 & 1 & NA & LOLOG\\
-\rowcolor{gray!6}  Employee Voice & 4 & 31 & 0 & NA & 1 & 1 & 1 & 1 & NA & LOLOG\\
+\cellcolor{gray!6}{Employee Voice} & \cellcolor{gray!6}{4} & \cellcolor{gray!6}{31} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{LOLOG}\\
 Employee Voice & 5 & 37 & 0 & NA & 1 & 1 & 1 & 1 & NA & LOLOG\\
 \addlinespace
-\rowcolor{gray!6}  Employee Voice & 6 & 39 & 0 & NA & 1 & 1 & 1 & 1 & NA & LOLOG\\
+\cellcolor{gray!6}{Employee Voice} & \cellcolor{gray!6}{6} & \cellcolor{gray!6}{39} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{LOLOG}\\
 Office Layout & University & 67 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & LOLOG\\
-\rowcolor{gray!6}  Office Layout & University & 69 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & LOLOG\\
+\cellcolor{gray!6}{Office Layout} & \cellcolor{gray!6}{University} & \cellcolor{gray!6}{69} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{LOLOG}\\
 Office Layout & Research & 109 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & LOLOG\\
-\rowcolor{gray!6}  Office Layout & Publisher & 119 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & LOLOG\\
+\cellcolor{gray!6}{Office Layout} & \cellcolor{gray!6}{Publisher} & \cellcolor{gray!6}{119} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{LOLOG}\\
 \addlinespace
 Disaster Response &  & 20 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & LOLOG\\
-\rowcolor{gray!6}  Company Boards & 2007 & 808 & 0 & 0 & 0 & 0 & 1 & 1 & NA & LOLOG\\
+\cellcolor{gray!6}{Company Boards} & \cellcolor{gray!6}{2007} & \cellcolor{gray!6}{808} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{LOLOG}\\
 Company Boards & 2008 & 808 & 0 & 0 & 0 & 0 & 1 & 1 & NA & LOLOG\\
-\rowcolor{gray!6}  Company Boards & 2009 & 808 & 0 & 0 & 0 & 0 & 1 & 1 & NA & LOLOG\\
+\cellcolor{gray!6}{Company Boards} & \cellcolor{gray!6}{2009} & \cellcolor{gray!6}{808} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{LOLOG}\\
 Company Boards & 2010 & 808 & 0 & 0 & 0 & 0 & 1 & 1 & NA & LOLOG\\
 \addlinespace
-\rowcolor{gray!6}  Swiss Decisions & Nuclear & 24 & 0 & 1 & 0 & NA & 1 & 1 & 1 & ERGM\\
+\cellcolor{gray!6}{Swiss Decisions} & \cellcolor{gray!6}{Nuclear} & \cellcolor{gray!6}{24} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{ERGM}\\
 Swiss Decisions & Pensions & 23 & 0 & 1 & 1 & 0 & 1 & 0 & 0 & ERGM\\
-\rowcolor{gray!6}  Swiss Decisions & Foreigners & 20 & 0 & 1 & 0 & NA & 1 & 0 & 0 & ERGM\\
+\cellcolor{gray!6}{Swiss Decisions} & \cellcolor{gray!6}{Foreigners} & \cellcolor{gray!6}{20} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{ERGM}\\
 Swiss Decisions & Budget & 25 & 0 & 1 & 0 & NA & 1 & 1 & 0 & ERGM\\
-\rowcolor{gray!6}  Swiss Decisions & Equality & 24 & 0 & 0 & 0 & NA & 1 & 1 & 0 & LOLOG\\
+\cellcolor{gray!6}{Swiss Decisions} & \cellcolor{gray!6}{Equality} & \cellcolor{gray!6}{24} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{LOLOG}\\
 \addlinespace
 Swiss Decisions & Education & 20 & 0 & 0 & 1 & 0 & 1 & 1 & NA & LOLOG\\
-\rowcolor{gray!6}  Swiss Decisions & Telecoms & 22 & 0 & 0 & 0 & NA & 1 & 1 & NA & LOLOG\\
+\cellcolor{gray!6}{Swiss Decisions} & \cellcolor{gray!6}{Telecoms} & \cellcolor{gray!6}{22} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{LOLOG}\\
 Swiss Decisions & Savings & 19 & 1 & 1 & 0 & NA & 1 & 1 & 0 & ERGM\\
-\rowcolor{gray!6}  Swiss Decisions & Persons & 26 & 0 & 1 & 0 & NA & 1 & 1 & 0 & ERGM\\
+\cellcolor{gray!6}{Swiss Decisions} & \cellcolor{gray!6}{Persons} & \cellcolor{gray!6}{26} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{ERGM}\\
 Swiss Decisions & Schengen & 26 & 0 & 0 & 0 & 0 & 1 & 1 & NA & LOLOG\\
 \addlinespace
-\rowcolor{gray!6}  University Emails &  & 1133 & 0 & 0 & 0 & 0 & 0 & 0 & NA & Neither\\
+\cellcolor{gray!6}{University Emails} & \cellcolor{gray!6}{} & \cellcolor{gray!6}{1133} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{Neither}\\
 School Friends & grade 3 & 22 & 1 & 0 & 0 & 0 & 1 & 1 & NA & LOLOG\\
-\rowcolor{gray!6}  School Friends & grade 4 & 24 & 1 & 0 & 0 & 0 & 1 & 1 & NA & ERGM\\
+\cellcolor{gray!6}{School Friends} & \cellcolor{gray!6}{grade 4} & \cellcolor{gray!6}{24} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{ERGM}\\
 School Friends & grade 5 & 22 & 1 & 0 & 0 & 0 & 1 & 1 & NA & ERGM\\
-\rowcolor{gray!6}  Online Links & Hyperlinks & 158 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & LOLOG\\
+\cellcolor{gray!6}{Online Links} & \cellcolor{gray!6}{Hyperlinks} & \cellcolor{gray!6}{158} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{0} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{LOLOG}\\
 \addlinespace
 Online Links & Framing & 150 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & LOLOG\\
-\hline
-\hline
-\rowcolor{gray!6}  Column Proportion & NA & NA & 0.43 & 0.37 & 0.46 & 0.23 & 0.94 & 0.86 & 0.5 & NA\\
+\midrule
+\midrule
+\cellcolor{gray!6}{Column Proportion} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{NA} & \cellcolor{gray!6}{0.43} & \cellcolor{gray!6}{0.37} & \cellcolor{gray!6}{0.46} & \cellcolor{gray!6}{0.23} & \cellcolor{gray!6}{0.94} & \cellcolor{gray!6}{0.86} & \cellcolor{gray!6}{0.5} & \cellcolor{gray!6}{NA}\\
 \bottomrule
 \end{longtable}
-
-\%
-
-\subsection{Overall Comments}
 
 Finally, we make some general comments regarding the significant amount
 of information on the hundreds of models fitted to the data that we
@@ -1012,7 +1067,7 @@ ERGM, in terms of goodness of fit and interpretability. We carried out
 fits to \(35\) networks in total and gave a summary of each of the
 networks' fits. We regard this as strong evidence that the LOLOG model
 is a useful model for modelling real social network data, as journal
-articles with published ERGM fits likely have a sleectiob bias towards
+articles with published ERGM fits likely have a selection bias towards
 data sets that are well suited to ERGMs.
 
 In carrying out this study we have gained a great deal of practical
@@ -1063,7 +1118,7 @@ network data in this study. It is worth noting that there are many
 settings where the ability to model the edge ordering process is a great
 advantage of the LOLOG model. A clear case is citation networks where
 the temporal directional is fundamental \citep{McLeveyetal2018}. Another
-case is where preferential attachmant type processes are thought to be
+case is where preferential attachment type processes are thought to be
 strong. A third is where the edge ordering is known exactly, or thought
 to be strongly influenced by a covariate or contingency. The further
 consideration of edge ordering processes is beyond the scope of this
@@ -1099,41 +1154,49 @@ to reproducibility of research in its many forms.
 
 \section{Additional Goodness of Fit Figures}\label{app:GOF}
 
-\begin{figure}[h]
+\begin{verbatim}
+## Error in lolog_boxplot(sims_list = list(lolog_1_2$gofits[[2]]$stats[, : could not find function "lolog_boxplot"
+\end{verbatim}
 
-{\centering \includegraphics{lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chunk-9-1} 
+\begin{verbatim}
+## Error in plot + ggplot2::theme_bw(): non-numeric argument to binary operator
+\end{verbatim}
 
-}
+\begin{verbatim}
+## Error in setwd("C:/Users/Duncan/Documents/Academics/journal_submissions/2020/LOLOG_Catalog/1_18_OfficeLayout"): cannot change working directory
+\end{verbatim}
 
-\caption{\label{fig:sailer_gof_pub_odeg} Sailer's Offices ERGM and LOLOG model with published terms, out-degree Goodness of Fit}\label{fig:unnamed-chunk-9}
-\end{figure}
+\begin{verbatim}
+## Error in readChar(con, 5L, useBytes = TRUE): cannot open the connection
+\end{verbatim}
 
-\begin{figure}[h]
+\begin{verbatim}
+## Error in readChar(con, 5L, useBytes = TRUE): cannot open the connection
+\end{verbatim}
 
-{\centering \includegraphics{lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chunk-10-1} 
+\begin{verbatim}
+## Error in lolog_boxplot(sims_list = list(lolog_1_2$gofits[[3]]$stats[, : could not find function "lolog_boxplot"
+\end{verbatim}
 
-}
+\begin{verbatim}
+## Error in plot + ggplot2::theme_bw(): non-numeric argument to binary operator
+\end{verbatim}
 
-\caption{\label{fig:sailer_gof_pub_esp} Sailer's Offices ERGM and LOLOG model with published terms, ESP Goodness of Fit}\label{fig:unnamed-chunk-10}
-\end{figure}
+\begin{verbatim}
+## Error in lolog_boxplot(sims_list = list(lolog_1_9$gofits[[2]]$stats[, : could not find function "lolog_boxplot"
+\end{verbatim}
 
-\begin{figure}[h]
+\begin{verbatim}
+## Error in plot + ggplot2::theme_bw(): non-numeric argument to binary operator
+\end{verbatim}
 
-{\centering \includegraphics{lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chunk-11-1} 
+\begin{verbatim}
+## Error in lolog_boxplot(sims_list = list(lolog_1_9$gofits[[3]]$stats[, : could not find function "lolog_boxplot"
+\end{verbatim}
 
-}
-
-\caption{\label{fig:sailer_gof_gwesp_star_odeg} Sailer's Offices LOLOG model with GWESP and stars, out-degree Goodness of Fit}\label{fig:unnamed-chunk-11}
-\end{figure}
-
-\begin{figure}[h]
-
-{\centering \includegraphics{lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chunk-12-1} 
-
-}
-
-\caption{\label{fig:sailer_gof_gwesp_star_esp}Sailer's Offices LOLOG model with GWESP and stars, ESP Goodness of Fit}\label{fig:unnamed-chunk-12}
-\end{figure}
+\begin{verbatim}
+## Error in plot + ggplot2::theme_bw(): non-numeric argument to binary operator
+\end{verbatim}
 
 \section{Individual Network Modelling Comments}\label{app:comments}
 
@@ -1164,7 +1227,7 @@ achieve an improved fit, but did not eliminate this issue.
 
 These data are 102 friendship networks in junior high school.
 \cite{Lubbers2007} performed reanalysis of 102 networks consider
-pseudo-likelihood and the then recent MCMCMLE methods. We omitted this
+pseudo-likelihood and the then recent MCMC-MLE methods. We omitted this
 from our study due to its size, and the fact that is atypical of the
 usual applied social network analyses that ERGM is used for.
 
@@ -1433,7 +1496,7 @@ nominate as well as the number of times they are likely to be nominated
 by other children.
 
 Another model was next fit, regarding the 3 classes as a single model
-with no edges between choldren in different classes. The authors then
+with no edges between children in different classes. The authors then
 fit ERGM with pseudo likelihood with various constraints regarding the
 parameters for each of the classes.
 

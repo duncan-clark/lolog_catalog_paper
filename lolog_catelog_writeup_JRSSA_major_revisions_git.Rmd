@@ -58,7 +58,7 @@ summary_names = c("Estimate","Std. Error","p-value")
 \setcounter{secnumdepth}{4}
 
 \begin{abstract}
-Exponential-family Random Graph models (ERGM) are widely used in social network analysis when modelling data on the relations between actors. ERGMs are typically interpreted as a snapshot of a network. The recently proposed Latent Order Logistic model (LOLOG) directly allows for a latent network formation process. We assess the real-world performance of these models when applied to typical networks modeled by researchers. Specifically, 
+Exponential-family Random Graph models (ERGM) are widely used in social network analysis when modelling data on the relations between actors. ERGMs are typically interpreted as a snapshot of a network. The recently proposed Latent Order Logistic model (LOLOG) directly allows for a latent network formation process. We assess the real-world performance of these models when applied to typical networks modelled by researchers. Specifically, 
 we model data from the ensemble of articles in the journal \textit{Social Networks} with published ERGM fits, and compare the ERGM fit to a comparable LOLOG fit. We demonstrate that the LOLOG models are, in general, in qualitative agreement with the ERGM models, and provide at least as good a model fit. In addition they are typically faster and easier to fit to data, without the tendency for degeneracy that plagues ERGMs.
 Our results support the general use of LOLOG models in circumstances where ERGM are considered.
 \end{abstract}
@@ -70,7 +70,7 @@ Social network analysis has become increasingly important in recent decades, wit
 
 The Exponential-family Random Graph Models (ERGM) framework is widely used to represent the stochastic process underlying social networks \citep{FrankStrauss1986,Hunter2006}. ERGMs allow researchers to quantitatively evaluate the impact of local social processes and nodal attributes on the probability of edges between nodes forming. However these models are prone to near-degeneracy \citep{Handcock2003} and can not naively be applied to large networks \citep{schweinberger2011,chatterjee2013}. Model degeneracy is the application specific tendency of the model to concentrate probability mass on a small subset of graphs, especially those which are not similar to realistic networks for that application.
 
-Much progress has been made on managing model degeneracy by introducing local neigbourhood structures \citep{schweinbergerhandcock2015} or tapering \citep{fellowshandcock2017}.
+Much progress has been made on managing model degeneracy by introducing local neighbourhood structures \citep{schweinbergerhandcock2015} or tapering \citep{fellowshandcock2017}.
 The presence of degeneracy in many fitted ERGMs motivates the search for alternative model classes
 with similar or complementary modelling capacity that are less susceptible to these challenges.
 
@@ -130,7 +130,7 @@ The structure of this paper is as follows. In Section \ref{sec:LOLOG} we briefly
 
 \section{ERGM and LOLOG Model Classes}\label{sec:LOLOG}
 
-Let $Y$ be a random graph whose realization is $y \in \mathscr{Y} = \lbrace a \in \R^{n \times n} \quad \vert \quad \forall i,j \quad y_{i,i} = 0
+Let $Y$ be a random graph whose realisation is $y \in \mathscr{Y} = \lbrace a \in \R^{n \times n} \quad \vert \quad \forall i,j \quad y_{i,i} = 0
 \quad y_{i,j} \in \lbrace 0,1 \rbrace\rbrace$. 
 We regard the number of nodes and any nodal covariates as fixed and known. For undirected networks the additional restriction that $y_{i,j} = y_{j,i} \quad\forall i,j$ can be added. 
 <!-- Let $|y|=\sum_{i,j}y_{i,j}$ denote the number of edges in $y$. -->
@@ -153,7 +153,7 @@ An ERGM for the network can be expressed as
 p_{E}(y\vert \theta) = \frac{\exp(\theta\cdot g(y))}{c({\theta})}~~~~~ y\in \mathscr{Y}
 \end{align}
 \noindent where $g(y)$ is a $d-$vector valued function defining a set of sufficient statistics; $\theta \in
-\mathds{R}^{d}$ is a vector of parameters; and $c(\theta)$ the normalizing
+\mathds{R}^{d}$ is a vector of parameters; and $c(\theta)$ the normalising
 constant.  Each ERGM is defined by the choice of sufficient statistics.  These
 are chosen by the researcher, depending on domain knowledge, to specify the
 generating social processes.  They can be any statistical summary of network
@@ -483,11 +483,11 @@ explanation]{snijders2006}.
 The Usefulness term is an edge-covariate term, with value the sum over edges of the usefulness measure: for dyad $(i,j)$ being person $i$'s self reported perception of the usefulness of person $j$.
 It measures the direct dependence of the propensity to have a social interaction on the usefulness of the person nominated.
 The Team Match term is the number of ties between people from the same team. It measures the propensity of teams to influence the density of social interaction. 
-Floor Match is similar to Team Match, except it measures the importance of being on the same floor for social interation.
+Floor Match is similar to Team Match, except it measures the importance of being on the same floor for social interaction.
 The metric distance term is the sum of the shortest walking distance in meters between the socially interacting peoples normal place of work.
 Similarly, the Topo distance is the sum of measures
 of how far the desks could be perceived to be apart given the topography of the office (See \cite{Sailer2012} for precise definitions). 
-The coefficients of the metric and Topo distances measure the increase in log-odds of a social interaction given the distance they are apart. These coeffients are generally
+The coefficients of the metric and Topo distances measure the increase in log-odds of a social interaction given the distance they are apart. These coefficients are generally
 negative, indicating that social interactions become less common as the distance increases.
 
 The best fitting model was then selected using the Akaike Information Criterion (AIC) and then a variety of different distance metrics were added individually as edge-covariates. The best model in terms of AIC was once again selected and analysed. Notably no analysis of the goodness of fit for the models was provided.
@@ -546,7 +546,7 @@ kable(tmp,format = "latex",booktabs = "T",caption = "\\label{tab:sailer_ergm_pub
 ```
 
 We were able to recreate the selected ERGM fit for all four networks, shown in Table \ref{tab:sailer_ergm_pub}.
-The Reciprocity coefficient is positve in two of the networks, indicating that the conditional log-odds of a social interaction is positive if the social interaction is mutual. 
+The Reciprocity coefficient is positive in two of the networks, indicating that the conditional log-odds of a social interaction is positive if the social interaction is mutual. 
 The GWESP coefficient is positive for all four networks, indicating that the log-odds of a social interaction existing is positive if the social interaction increases this measure of transitivity.
 The Usefulness coefficient is positive for all four networks, indicating that the log-odds of a social interaction existing is positively related to the usefulness of the nominated person.
 The Team Match coefficient is positive for all four networks, indicating that the log-odds of a social interaction existing is positive if the social interaction is within the same team (as distinct from between people in different teams).
@@ -559,17 +559,17 @@ While being on the same floor plays a role in some cases, the distance apart pla
 people closer together.
 
 We were able to obtain LOLOG fits with the same covariates, as the ERGM fits for
-all networks, we summarize the fits in Table \ref{tab:sailer_lolog_pub}.
+all networks, we summarise the fits in Table \ref{tab:sailer_lolog_pub}.
 In addition we show the LOLOG fit using GWESP, 2- and 3- in- and out-stars,
 together with all covariate matches and metric distance in Table
 \ref{tab:sailer_lolog_gwesp_star}.
-For $k=1, 2, \ldots,$ a $k$-in-star centered on a node $i$ and a set
+For $k=1, 2, \ldots,$ a $k$-in-star centred on a node $i$ and a set
           of $k$ different nodes $\{i_1, \ldots, i_{k}\}$ such that the tie from $i$ to 
           $i_{j}$ exists for $j=1, \ldots, k$.
-The $k$-in-star statistic is the number of distinct $k$-in-stars in the network (i.e., summing over the centering nodes).
+The $k$-in-star statistic is the number of distinct $k$-in-stars in the network (i.e., summing over the centring nodes).
 The $k$-out-star statistic is the same except the ties from $i_{j}$ to
           $i$ must exist for $j=1, \ldots, k$ (rather than the in-ties to $i$).
-As noted in Section 2.2, the qualitiative interpretation of the LOLOG coefficients is similar to ERGM with the primary difference being the log-odds
+As noted in Section 2.2, the qualitative interpretation of the LOLOG coefficients is similar to ERGM with the primary difference being the log-odds
 is conditional on the network at the point the edge is added. We directly compare the qualitative fits in Section 4.3.
 
 ```{r}
@@ -665,7 +665,7 @@ rownames <- c("Edges","Reciprocity","GWESP(0.5)","Out-2-Star","Out-3-Star","In-2
 rownames(tmp) <- rownames
 
 kable(tmp,format = "latex",booktabs = "T",caption = "\\label{tab:sailer_lolog_gwesp_star}
-      Office Layout LOLOG fit with GWESP and 2- and 3- in- and out-stars. Significant out-star terms may suggest there is social structure unaccounted for with just the published ERGM terms. Despite addtional significant structural terms, still shows broad quantitative agreement with the published results using ERGM")%>%
+      Office Layout LOLOG fit with GWESP and 2- and 3- in- and out-stars. Significant out-star terms may suggest there is social structure unaccounted for with just the published ERGM terms. Despite additional significant structural terms, still shows broad quantitative agreement with the published results using ERGM")%>%
   kable_styling(latex_options = c("striped"),position = "center")%>%
   footnote(general = "*** p-value < 0.001 , ** p-value < 0.01, * p-value < 0.5",threeparttable=T,general_title = "")
 ```
@@ -728,7 +728,7 @@ We also fitted the LOLOG model where the people are added in the order of their 
 
 We tried to fit an ERGM model with the in- and out- geometrically weighted degree (GWDEG) terms but this was degenerate for the University 2005 and 2008 networks. The in-GWDEG term adds one network statistic to the model equal to a weighted
 sum of the in-degree counts with weights decreasing geometrically. The out-GWDEG is similar with the out-degree counts \citep[See][for a detailed explanation]{hunter07}. 
-For the Research institute and Publisher out- GWDEG was negative and significant, in line with the LOLOG model positive 2-star and negative 3-star parameters. However, the fit was still poor and inferior to the LOLOG model. We do not comment further on this, though it is reassuring that the ERGM with GWDEG gives similar interpretations to LOLOG with star terms. The GWDEG terms were not discussed in \cite{Sailer2012}.
+For the Research institute and Publisher out-GWDEG was negative and significant, in line with the LOLOG model positive 2-star and negative 3-star parameters. However, the fit was still poor and inferior to the LOLOG model. We do not comment further on this, though it is reassuring that the ERGM with GWDEG gives similar interpretations to LOLOG with star terms. The GWDEG terms were not discussed in \cite{Sailer2012}.
 
 We note the computation time difference in the LOLOG and ERGM parameter estimation. We ran each with a single core with Intel(R) Xeon(R) Platinum 8160 CPU @ 2.10GHz processor. The recreated ERGM took around 35 seconds, and the LOLOG took around 8 seconds. For larger networks, we found parallelisation in the network simulation step of the fit to be extremely helpful for both the LOLOG and ERGM models. From our experience for larger networks the performance differential between LOLOG and ERGM can be much greater, in particular when the ERGM MCMC simulation is computationally expensive.
 
@@ -785,7 +785,7 @@ kable(tmp,format = "latex",booktabs = "T",caption = "\\label{tab:sailer_lolog_tr
 Firstly we consider the goodness of fit for the published ERGM model, and the LOLOG model with the same terms. Figures \ref{fig:sailer_gof_pub_ideg} show the comparison of simulated distribution of the in-degree with the observed network statistics. Figures \ref{fig:sailer_gof_pub_odeg}  and \ref{fig:sailer_gof_pub_esp} contained in Appendix \ref{app:GOF} show the same comparison for ESP and out-degree.
 
 ```{r, fig.align = 'center', fig.width=10, fig.height=6,fig.cap = "\\label{fig:sailer_gof_pub_ideg}Sailer's Offices ERGM and LOLOG model with published terms, in-degree Goodness of Fit"}
-#Define function to convert plot to brewer color scheme
+#Define function to convert plot to brewer colour scheme
 convert_brewer <- function(plot){
   plot <- plot +
           ggplot2::theme_bw()+
@@ -946,26 +946,39 @@ These networks are of particular interest as they represents a real world cases 
 
 However it is important to note that neither the LOLOG or the ERGM with the fitted terms fitted the data well in terms of all in- and out-degree and ESP distribution. Therefore the models are not capturing basic aspects of the observed network data and the above interpretation should be treated with caution. In particular the Publisher network proved especially hard to fit.
 
-Using the triangle term in the LOLOG model in place of the GWESP term did not improve the fit. Including 2- and 3- in- and out-star terms yields models that fit much better on the in- and out-degree distribution as well and the ESP distribution. We therefore have more belief that inferences from these models are valid. They show similar conclusions to the published ERGM, though in addition we observe a positive significant out-2-star term and a negative significant out-3-star term, suggesting that there is a tendency for some peope to have social interactions with many more people that others. This tendency for super-daily interactors was not captured in the published ERGM fit. We also note that the lack of significant in-2-star parameter suggests that there is not a corresponding tendency for some people to attract more interactions, when their usefulness had already been accounted for. Thus we can infer that perhaps there is a surplus of unwanted daily interaction due to people with a tendency for high out-degree. Thus the LOLOG model allowed for a better fit, as well as a deeper interpretation of the social interaction process.
+Using the triangle term in the LOLOG model in place of the GWESP term did not improve the fit. Including 2- and 3- in- and out-star terms yields models that fit much better on the in- and out-degree distribution as well and the ESP distribution. We therefore have more belief that inferences from these models are valid. They show similar conclusions to the published ERGM, though in addition we observe a positive significant out-2-star term and a negative significant out-3-star term, suggesting that there is a tendency for some people to have social interactions with many more people that others. This tendency for super-daily interactors was not captured in the published ERGM fit. We also note that the lack of significant in-2-star parameter suggests that there is not a corresponding tendency for some people to attract more interactions, when their usefulness had already been accounted for. Thus we can infer that perhaps there is a surplus of unwanted daily interaction due to people with a tendency for high out-degree. Thus the LOLOG model allowed for a better fit, as well as a deeper interpretation of the social interaction process.
 
 \section{Summary of Results for the Ensemble}\label{sec:results}
 
-Table \ref{tab:summary_table} provides a summary of the ERGM and LOLOG fits for the networks in our ensemble, the columns are binary answers (1=Yes,0 = No), to the following questions of interest, which are followed by a brief justification of our interest in them.
-
+The comparison of the value of models rarely will come down to a quantitative measure on a single dimension. The social processes that produce
+network data are typically complex and our chose of which data to analyse tends to favour complex structures. The models typically only
+approximate that structure and some features of the data are not represented in the models. Scientists that model social network data typically
+have multiple objectives with some models more suited to some of those objectives rather than others. Having said this, we constructed a rubric 
+of criteria to assess the models, both relatively and absolutely. We follow each criterion with a 
+brief justification for why it was included.
 \begin{enumerate}
-\item Are we able to recreate the published ERGM qualitatively? As a first step to ensure we were using the data correctly, so our comparison is valid.
-\item Do the recreations of published ERGM fit the network well? This is tested to assess the validity of the published ERGM results, and to assess if ERGM is a good model for the published case study.
-\item Are we able to fit LOLOG with published ERGM terms? Chosen to assess the flexibility of the LOLOG model class.
-\item Does LOLOG model with published ERGM terms fit well? Assesses the suitability of the LOLOG model with ERGM terms.
-\item Are we able to fit LOLOG model with ERGM Markov terms usually degenerate in ERGM? This helps understand if LOLOG can aid in interpretability with simpler terms that are not possible in ERGM.
-\item Is a better fit achieved with LOLOG than published ERGM? If this is true then we believe the LOLOG to be a better model for the observed data than the published ERGM
-\item Do published ERGM and best fitting LOLOG have consistent interpretation? Affirmative answers to this problem, gives some confidence that results are not simply an artefact of the chosen modeling approach.
-\item Which model do we believe to be more useful. Our opinion based on the experience fitting  and interpreting models for each network.
+\item Are we able to recreate the published ERGM qualitatively?\\
+We asked this to screen out network data where our usage differs qualitatively from the original, for whatever reason. This is to help ensure we were using the data correctly, so that our comparison is valid.
+\item Do the recreations of published ERGM fit the network well?\\
+This is to assess the validity of the published ERGM results, and to assess if ERGM is a good model for the published case study.
+\item Are we able to fit LOLOG with published ERGM terms?\\
+This is to assess the LOLOG on terms likely favourable to the ERGM. Typically, published ERGM will have undergone model selection criteria to
+choose terms that had good fit compared to other possible ERGM. This criteria assesses the flexibility of the LOLOG model class.
+\item Does LOLOG model with published ERGM terms fit well?\\
+This is an absolute measure of the LOLOG goodness-of-fit with the ERGM terms.
+\item Are we able to fit LOLOG model with ERGM Markov terms usually degenerate in ERGM?\\
+Markov terms, such as $k$-stars and triangles, often lead to near-degenerate models despite their conceptual appeal \citep{FrankStrauss1986}. This criteria assesses in the LOLOG can aid in interpretability due using simpler terms that are not possible in ERGM.
+\item Is a better fit achieved with LOLOG than the published ERGM?\\
+This is an direct absolute comparison to judge if the LOLOG is a better model for the observed data than the published ERGM.
+\item Do the published ERGM and best-fitting LOLOG model have consistent interpretations?\\
+This assesses if qualitative substantive conclusions draw from each model are consistent with the other.
+If affirmative, this gives some confidence that qualitative conclusions are not simply an artefact of the chosen modelling approach.
+\item Which model do we believe to be more useful.\\
+This is a subjective judgement criterion. A major component is the goodness-of-fit criteria (Section 2.5). These criteria measure the degree that important statistical characteristics of the network data are reproduced by the model. These focus on characteristics not explicitly in the model. A second component is the substantive interpretability of the terms. A third is the complexity of the model terms.
 \end{enumerate}
 
-TODO Mark: describe the criteria we used to decide on these questions 
-
-The fits were carried out in R using the `ergm` package \citep{ergm_3_9_4}, and the `lolog` package \citep{LOLOG_github}. Where possible decay parameters were used as stated, where this was not available, the first option was to let $\alpha= 0.5$.
+Table \ref{tab:summary_table} provides a summary of the ERGM and LOLOG model fits for the networks in our ensemble, the columns are binary answers (1=Yes,0 = No), to the above criteria.
+The fits were carried out in R using the `ergm` package \citep{ergm_3_9_4}, and the `lolog` package \citep{LOLOG_github}. For the GWESP, GWDSP and GWDEG terms decay parameters were used as stated. If they where not available, $\alpha= 0.5$ was used.
 
 We provide brief commentary of the results overall, and provide more detailed modelling comments for each network in Appendix \ref{app:comments}
 
@@ -1118,7 +1131,7 @@ kable(tmp,format = "latex",booktabs = "T",longtable = TRUE,caption = "\\label{ta
   row_spec(36,hline_after = T)
 ```
 
-%\subsection{Overall Comments}
+<!-- subsection{Overall Comments} -->
 
 Finally, we make some general comments regarding the significant amount of information on the hundreds of models fitted to the data that we gathered, more detailed summaries for each individual network are contained in Appendix \ref{app:comments}. More detailed overall comments on the study are in the discussion in Section \ref{sec:discussion}.
 
@@ -1130,7 +1143,7 @@ In general our experience in fitting the LOLOG model was that it was easier and 
 
 \section{Discussion}\label{sec:discussion}
 
-We have shown that the LOLOG model can be fit to most members of an ensemble of network data sets that have published ERGM fits in the journal \textit{Social Networks}. We report a case-study of a complex data set and show that the LOLOG model is at least the equal of the ERGM, in terms of goodness of fit and interpretability. We carried out fits to $35$ networks in total and gave a summary of each of the networks' fits. We regard this as strong evidence that the LOLOG model is a useful model for modelling real social network data, as journal articles with published ERGM fits likely have a sleectiob bias towards data sets that are well suited to ERGMs.
+We have shown that the LOLOG model can be fit to most members of an ensemble of network data sets that have published ERGM fits in the journal \textit{Social Networks}. We report a case-study of a complex data set and show that the LOLOG model is at least the equal of the ERGM, in terms of goodness of fit and interpretability. We carried out fits to $35$ networks in total and gave a summary of each of the networks' fits. We regard this as strong evidence that the LOLOG model is a useful model for modelling real social network data, as journal articles with published ERGM fits likely have a selection bias towards data sets that are well suited to ERGMs.
 
 In carrying out this study we have gained a great deal of practical experience in the types of tasks for which ERGMs are used, as well as practical problems in fitting them, in particular code run time and degeneracy issues. We have found the LOLOG model to be in general more user friendly and faster to fit, leading to easier identification of poor models, and a much faster data analysis procedure. The benefits of this should not be overlooked, in particular when social network analyses are often of interest to applied researchers whose expertise is not statistical modelling. As a result LOLOG models seem particularly better suited to feasibly analysing larger networks, which whilst possible to fit with ERGMs \citep{stivala2020}, often require significant tuning and computational resources.
 
@@ -1144,7 +1157,7 @@ Goodness of fit of LOLOG models also compares favourably with the ERGMs, with li
 
 The LOLOG model has the advantage of being able to account for edge orderings. We believe that this may be helpful for analysing network data, although we have not seen clear benefits in the ensemble of network data in this study. 
 It is worth noting that there are many settings where the ability to model the edge ordering process is a great advantage of the LOLOG model. A clear
-case is citation networks where the temporal directional is fundamental \citep{McLeveyetal2018}. Another case is where preferential attachmant type
+case is citation networks where the temporal directional is fundamental \citep{McLeveyetal2018}. Another case is where preferential attachment type
 processes are thought to be strong. A third is where the edge ordering is known exactly, or thought to be strongly influenced by a covariate or
 contingency. 
 The further consideration of edge ordering processes is beyond the scope of this paper. However, we hope that having a latent ordering network model like LOLOG available will spur the development of edge ordering processes models. While they may seem novel they allow scope for thinking about network processes. We also note that the LOLOG model is a fully general model in the sense that it can represent any probability mass function over the space of networks. Therefore even if it is hard to justify such an edge formation procedure, the LOLOG model may still be a useful approach to understanding the social processes producing network data.
@@ -1168,7 +1181,7 @@ We would like to acknowledge and thank all of the authors that provided data tha
 
 <!-- #These are published ERGM papers, LOLOG performs well in almost all cases - this is a really strong evidence for LOLOG being a good model! -->
 
-<!-- # Modelers should consider using LOLOG to speed up their research and cause fewer issues with models not fitting etc ! -->
+<!-- # Modellers should consider using LOLOG to speed up their research and cause fewer issues with models not fitting etc ! -->
 
 \appendix
 \appendixpage
@@ -1396,7 +1409,7 @@ We were able to fit ERGMs and LOLOG with the published ERGM terms but the models
 
 \subsection{Junior High}
 
-These data are 102 friendship networks in junior high school. \cite{Lubbers2007} performed reanalysis of 102 networks consider pseudo-likelihood and the then recent MCMCMLE methods. We omitted this from our study due to its size, and the fact that is atypical of the usual applied social network analyses that ERGM is used for.
+These data are 102 friendship networks in junior high school. \cite{Lubbers2007} performed reanalysis of 102 networks consider pseudo-likelihood and the then recent MCMC-MLE methods. We omitted this from our study due to its size, and the fact that is atypical of the usual applied social network analyses that ERGM is used for.
 
 \subsection{Kapferer's Tailors}
 
@@ -1491,7 +1504,7 @@ These networks were directed networks of friendships in middle schools classes o
 
 The authors' approach was non standard in the context of modern methods. They first fit a single network with "expansiveness" and "attractiveness" parameters for each individual child, essentially a unique parameter governing the number of friends a child is likely to nominate as well as the number of times they are likely to be nominated by other children.
 
-Another model was next fit, regarding the 3 classes as a single model with no edges between choldren in different classes. The authors then fit ERGM with pseudo likelihood with various constraints regarding the parameters for each of the classes.
+Another model was next fit, regarding the 3 classes as a single model with no edges between children in different classes. The authors then fit ERGM with pseudo likelihood with various constraints regarding the parameters for each of the classes.
 
 As this was a non standard modelling approach we did not recreate the published ERGM fits directly. We were able to fit the ERGM model with MCMC MLE methods, with GWESP and GWDEG terms for the grade 4 and 5 models, but needed to omit the GWESP terms to be able to fit the grade 3 network. All models showed strong homophily on grade, with the GWESP term significant and positive and the GWDEG terms not significant for grades 4 and 5. The simpler grade 3 model had significant and negative terms for GWDEG terms suggesting that the network was not driven by super friendship nominators or nomination receivers. These models fitted the observed network data well.
 
