@@ -224,8 +224,9 @@ Along with developing LOLOG models in \cite{Fellows2018}, the `lolog` R package 
 
 ERGM parameters are typically estimated using an MCMC procedure to estimate the MLE \citep{Snijders2002,Hunter2006}. This is computationally demanding and there are sophisticated R packages available to perform this estimation \citep{ergm_3_9_4}.
 
-See Appendix \ref{app:code} for example R code for fitting LOLOG models and ERGM. 
 For both LOLOG and ERGM models we approximate standard errors derived from MCMC estimated inverse Fisher information matrices.
+
+See \url{https://github.com/duncan-clark/lolog_catalog_paper} for example R code for fitting LOLOG models and ERGM. 
 
 \subsection{Model Discussion}\label{sec:comparison}
 
@@ -324,7 +325,7 @@ tmp$Edges <- c(1236,"Varies",267,15,53,104,53,126,139,149,155,211,203,458,872,14
 tmp$Directed <- c("Undirected","Directed","Undirected","Undirected","Directed","Directed","Directed","Directed","Directed","Directed","Directed","Directed","Directed","Directed","Directed","Directed","Undirected",'Undirected',"Undirected","Undirected","Directed","Directed","Directed","Directed","Directed","Directed","Directed","Directed","Directed","Directed","Undirected","Directed","Directed","Directed","Directed","Undirected")
 tmp$'Nodal Covariates' <- c(4,3,0,2,4,3,3,3,3,3,3,0,0,0,0,7,0,0,0,0,8,8,8,8,8,8,8,8,8,8,0,1,1,1,3,3)
 
-kable(tmp,format = "latex",booktabs = "T",longtable = TRUE,caption = "\\label{tab:network_summaries} Key properties of each network contained in the ensemble")%>%
+kable(tmp,format = "latex",booktabs = "T",longtable = FALSE,caption = "\\label{tab:network_summaries} Key properties of each network contained in the ensemble")%>%
   kable_styling(latex_options =c("striped","scale_down","hold_position"),position = "center")
 ```
 
@@ -384,8 +385,9 @@ kable(tmp,format = "latex",booktabs = "T",longtable = TRUE,caption = "\\label{ta
 
 Remove the covariate column
 
-\begin{longtable}[t]{lllllr}
+\begin{table}
 \caption{\label{tab:network_summaries} Key properties of each network contained in the ensemble}\\
+\begin{tabular}[t]{lllllr}
 \toprule
 Description & Network & Nodes & Edges & Directed  & Citation\\
 \midrule
@@ -436,7 +438,8 @@ School Friends & grade 5 & 22 & 103 & Directed & \cite{Anderson1999}\\
 \rowcolor{gray!6}  Online Links & Hyperlinks & 158 & 1444 & Directed & \cite{Ackland2011}\\
 Online Links & Framing & 150 & 1382 & Undirected & \cite{Ackland2011}\\
 \bottomrule
-\end{longtable}
+\end{tabular}
+\end{table}
 
 Our selection of ERGM papers was at first a census of papers in the journal \textit{ Social Networks} using the ERGM framework. The conclusions drawn from this study should be considered stronger than if the networks selected were sampled at random or through convenience. We do note that we did take a convenience sample as described above as a first wave of networks to request data for, though this was also chosen based on our thoughts on which networks the authors would be able and willing to share.
 
@@ -998,7 +1001,8 @@ We provide brief commentary of the results overall, and provide more detailed mo
 <!--   kable_styling(latex_options = c("striped","hold_position"),position = "center") -->
 <!-- ``` -->
 
-```{r}
+```{r,eval = F}
+# used to generate table for latex
 tmp <- as.data.frame(matrix(rep(0,36*11),nrow = 36))
 names(tmp) <- c("Description", "Network","Nodes",letters[seq(1,8)])
 
@@ -1130,6 +1134,62 @@ kable(tmp,format = "latex",booktabs = "T",longtable = TRUE,caption = "\\label{ta
   row_spec(36,hline_after = T)%>%
   row_spec(36,hline_after = T)
 ```
+
+\begin{table}
+\caption{\label{tab:summary_table} Summary table for LOLOG and ERGM Fits}\\
+\begin{tabular}[t]{lllllllllll}
+\toprule
+Description & Network & Nodes & a & b & c & d & e & f & g & h\\
+\midrule
+\rowcolor{gray!6}  Add Health &  & 1618 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & LOLOG\\
+School Friends &  & Various &  &  &  &  &  &  &  & \\
+\rowcolor{gray!6}  Kapferer's Tailors &  & 39 & 1 & 0 & 1 & 0 & 1 & 1 & 0 & LOLOG\\
+Florentine Families &  & 16 & 1 & 1 & 1 & 1 & 1 & 1 & 0 & ERGM\\
+\rowcolor{gray!6}  German Schoolboys &  & 53 & 1 & 1 & 0 & NA & 1 & 1 & 1 & Both\\
+\addlinespace
+Employee Voice & 1 & 27 & 0 & NA & 1 & 1 & 1 & 1 & NA & LOLOG\\
+\rowcolor{gray!6}  Employee Voice & 2 & 24 & 1 & 1 & 0 & NA & 0 & 0 & NA & ERGM\\
+Employee Voice & 3 & 30 & 0 & NA & 1 & 1 & 1 & 1 & NA & LOLOG\\
+\rowcolor{gray!6}  Employee Voice & 4 & 31 & 0 & NA & 1 & 1 & 1 & 1 & NA & LOLOG\\
+Employee Voice & 5 & 37 & 0 & NA & 1 & 1 & 1 & 1 & NA & LOLOG\\
+\addlinespace
+\rowcolor{gray!6}  Employee Voice & 6 & 39 & 0 & NA & 1 & 1 & 1 & 1 & NA & LOLOG\\
+Office Layout & University & 67 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & LOLOG\\
+\rowcolor{gray!6}  Office Layout & University & 69 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & LOLOG\\
+Office Layout & Research & 109 & 1 & 1 & 1 & 0 & 1 & 1 & 1 & LOLOG\\
+\rowcolor{gray!6}  Office Layout & Publisher & 119 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & LOLOG\\
+\addlinespace
+Disaster Response &  & 20 & 0 & 0 & 0 & 0 & 1 & 1 & 0 & LOLOG\\
+\rowcolor{gray!6}  Company Boards & 2007 & 808 & 0 & 0 & 0 & 0 & 1 & 1 & NA & LOLOG\\
+Company Boards & 2008 & 808 & 0 & 0 & 0 & 0 & 1 & 1 & NA & LOLOG\\
+\rowcolor{gray!6}  Company Boards & 2009 & 808 & 0 & 0 & 0 & 0 & 1 & 1 & NA & LOLOG\\
+Company Boards & 2010 & 808 & 0 & 0 & 0 & 0 & 1 & 1 & NA & LOLOG\\
+\addlinespace
+\rowcolor{gray!6}  Swiss Decisions & Nuclear & 24 & 0 & 1 & 0 & NA & 1 & 1 & 1 & ERGM\\
+Swiss Decisions & Pensions & 23 & 0 & 1 & 1 & 0 & 1 & 0 & 0 & ERGM\\
+\rowcolor{gray!6}  Swiss Decisions & Foreigners & 20 & 0 & 1 & 0 & NA & 1 & 0 & 0 & ERGM\\
+Swiss Decisions & Budget & 25 & 0 & 1 & 0 & NA & 1 & 1 & 0 & ERGM\\
+\rowcolor{gray!6}  Swiss Decisions & Equality & 24 & 0 & 0 & 0 & NA & 1 & 1 & 0 & LOLOG\\
+\addlinespace
+Swiss Decisions & Education & 20 & 0 & 0 & 1 & 0 & 1 & 1 & NA & LOLOG\\
+\rowcolor{gray!6}  Swiss Decisions & Telecoms & 22 & 0 & 0 & 0 & NA & 1 & 1 & NA & LOLOG\\
+Swiss Decisions & Savings & 19 & 1 & 1 & 0 & NA & 1 & 1 & 0 & ERGM\\
+\rowcolor{gray!6}  Swiss Decisions & Persons & 26 & 0 & 1 & 0 & NA & 1 & 1 & 0 & ERGM\\
+Swiss Decisions & Schengen & 26 & 0 & 0 & 0 & 0 & 1 & 1 & NA & LOLOG\\
+\addlinespace
+\rowcolor{gray!6}  University Emails &  & 1133 & 0 & 0 & 0 & 0 & 0 & 0 & NA & Neither\\
+School Friends & grade 3 & 22 & 1 & 0 & 0 & 0 & 1 & 1 & NA & LOLOG\\
+\rowcolor{gray!6}  School Friends & grade 4 & 24 & 1 & 0 & 0 & 0 & 1 & 1 & NA & ERGM\\
+School Friends & grade 5 & 22 & 1 & 0 & 0 & 0 & 1 & 1 & NA & ERGM\\
+\rowcolor{gray!6}  Online Links & Hyperlinks & 158 & 1 & 0 & 1 & 0 & 1 & 1 & 1 & LOLOG\\
+\addlinespace
+Online Links & Framing & 150 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & LOLOG\\
+\hline
+\hline
+\rowcolor{gray!6}  Column Proportion & NA & NA & 0.43 & 0.37 & 0.46 & 0.23 & 0.94 & 0.86 & 0.5 & NA\\
+\bottomrule
+\end{tabular}
+\end{table}
 
 <!-- subsection{Overall Comments} -->
 
@@ -1403,9 +1463,11 @@ convert_JRSS(tmp)
 
 This was a network of high school students, obtained from the well studied National Longitudinal Study of Adolescent to Adult Health \citep{AddHealth2007}. Networks from the survey have been fit using ERGMs [\cite{Goodreau2007}, \cite{Hunter_Goodreau_2008}]. There are multiple networks available but the particular network in this case has 1681 adolescents/nodes with covariates for grade, gender and race provided.
 
+Analysis of the network with ERGMs, yields insights into the typical relationships between nodes of different and common grade, gender and race. Notably the tendency towards homophily within all grades as well as between white and black students but not hispanic students. The models allow for the strong interdependence of network ties, using the GWESP term.
+
 We were able to fit ERGMs and LOLOG with the published ERGM terms but the models did not fit the data well as noted extensively in \cite{Goodreau2007}.
 
-\cite{Goodreau2007} provided extensive commentary on the goodness of fit of many ERGM models, the authors considered the degree and ESP distributions as well as the distribution of geodesic distances between people A good fit on the degree distribution was only able to be achieved by the authors by including terms that sacrificed the fit on the ESP distribution. The LOLOG models exhibited similar problems, however we were able to fit a LOLOG model with triangles and stars to achieve an improved fit, but did not eliminate this issue.
+\cite{Goodreau2007} provided extensive commentary on the goodness of fit of many ERGM models, the authors considered the degree and ESP distributions as well as the distribution of geodesic distances between people. A good fit on the degree distribution was only able to be achieved by the authors by including terms that sacrificed the fit on the ESP distribution. The LOLOG models exhibited similar problems, however we were able to fit a LOLOG model with triangles and stars to achieve an improved fit, but did not eliminate this issue.
 
 \subsection{Junior High}
 
@@ -1417,29 +1479,33 @@ The paper that fit this ERGM was \cite{Robins2007}. The authors in this paper we
 
 In the Kapferer Tailor Shop networks, the nodes are workers in a Zambian tailor shop, with two different interactions, social and "instrumental"(work or assistance related). These were collected at two distinct time points giving 4 networks. \cite{Robins2007} stated the ERGM fit of the kapfts1 - the first social interaction network, of 39 workers, which is what concerns us here.
 
+Briefly the qualitative conclusion of the analysis in \cite{Robins2007} was that the network exhibited a tendency towards dense regions of overlapping triangulation within a core periphery structure.This was suggested by the significant and positive geometrically weighted edgewise shared partner parameter in addition the lack of significant alternating k star triangle. The authors comment that this suggests the network exhibits a small number of popular tailors, with the underlying social interaction network driven by social transitivity.
+
 Our estimated coefficients were different to those stated by the authors, though the results are not qualitatively different, the use of \texttt{pnet} instead of the \texttt{ergm} package may contribute to this. We were unable to recreate the fit when including a 2-star parameter unlike the authors who state a result for this. We were able to fit an ERGM with high decay parameters, but this neither matched the published ERGM, nor provided any extra insight. We were also unable to fit the network to an ERGM with triangle and star parameters as stated by the authors.
 
 We were able to fit LOLOG models to the network using the geometrically weighted terms. However in contrast to ERGM we were able to fit LOLOG just with triangle, 2 and 3 star parameters.
 
 Using higher order terms as in the published fit, the fit of the LOLOG and ERGM models were poor on the degree and edgewise shared partners (esp) distribution of the network. Fitting the LOLOG model with triangle and star terms was a slight improvement.
 
-The authors commented on the ERGM fit that the significant and positive geometrically weighted edgewise shared partner parameter, suggests clustering into dense regions of overlapping triangles. In addition the alternating k star triangle not being significant suggests core periphery structure due to triangulation not popularity effects. This interpretation was consistent with the LOLOG triangle and star model interpretation.
+The qualitative conclusion of the authors was was consistent with the LOLOG triangle and star model interpretation.
 
 \subsection{Florentine Families}
 
 This network was the second network fit in \cite{Robins2007}. In this network the nodes are 16 influential families in Florence in the 1500s. Marital networks and business tie networks are available with the fit published being the business network.
 
-The published fitting focused on structural terms, including nodal covariates did not have a large effect on the coefficients. 
+The published fitting focused on structural terms, including nodal covariates did not have a large affect on the coefficients. The qualitative conclusion of the analysis was a high level of social transitivity, and a tendency for non-isolated families to have multiple business ties with other families, but with a ceiling on the likely number of such ties. This likely reflects the difficulty of a family maintaining business ties with an increasing number of different families, in a commercially competitive environment.
 
 We were able to recreate the published ERGM and fit LOLOG model with the same terms. Both models fitted the observed network well. However the LOLOG model parameters had high estimated variance, suggesting that the model fit could be sensitive to variation in the data. This limits the interpretation possible from the LOLOG model. We do however note that variance estimates for both the LOLOG and ERGM model are only asymptotically valid, so are likely not valid for such a small network.
 
 \subsection{German Schoolboys}
 
-This network is a directed network of friendships between German schoolboys in class from 1880 to 1881, collected by Johannes Delitsch, in one of the earliest studies to engage a network based approach. This was reanalysed in \cite{Heidler2014} with an ERGM approach, and compared with similar friendship networks in schools today.
+This network is a directed network of friendships between German schoolboys in class from 1880 to 1881, collected by Johannes Delitsch, in one of the earliest studies to engage a network based approach. This was reanalysed in \cite{Heidler2014} with ERGMs, and compared with similar friendship networks in schools today.
 
-Nodal covariates were available for academic class rank, whether the student was repeating  class rank, whether the student gave sweets out, and whether the student was handicapped or not. Note that academic rank also has a spatial component since the schoolboys were sat in order of their academic rank in the classroom.
+Nodal covariates available were academic class rank, whether the student was repeating  class rank, whether the student gave sweets out, and whether the student was handicapped or not. Note that academic rank also has a spatial component since the schoolboys were sat in order of their academic rank in the classroom.
 
-We were able to match the models in the paper, which used a wide array of network terms. We found models fitted using star and triangle parameter to be degenerate. We noted that the models in the paper did not include geometrically weight degree terms as is usual to account for social popularity processes.
+The authors concluded that the pupils network had a tendency towards reciprocated friendships. The also concluded the triadic closure observed is generated through transitivity and not through generalized exchange, due to the lack of significant cycling triple parameter when included. In addition the analysis concluded high academic class rank students were more likely to have more friendships and that friendship nominations tended to be hiearchical. That is pupils tended to nominated other pupils ranked higher than themselves as friends. There was also interest in the four repeaters and the ‘sweets giver’ have who were concluded to have disproportionately high popularity even after allowing for the other social structure of the network. The opposite was concluded for impaired pupils.
+
+We were able to match the models in the paper, which used a wide array of network terms. We found models fitted using star and triangle parameter to be degenerate. We noted that the models in the paper did not include geometrically weighted degree terms as is usual to account for social popularity processes.
 
 We were not able to fit LOLOG models using the terms in the published ERGM fit. However substituting the geometrically weighted ESP term for triangle term allowed for the fitting of the LOLOG model. The published ERGM and LOLOG model with triangle term substituted both fit the observed network well.
 
@@ -1447,10 +1513,13 @@ The LOLOG model interpretation was broadly consistent with the ERGM interpretati
 
 We also experimented with constraining the orderings by nodal covariates for this network. Introducing rank based ordering i.e. considering edges involving higher ranked boys first (least academically able) increases the up-rank effect and produces a highly significant nodal rank effect. As we are considering high rank boys first, in the generating process, if all else were equal they become "filled up", i.e. highly connected before the lower rank boys are added. However we observe in the data low rank boys nominating high rank boys as friends. To counteract the negative effect on tie formation between low and the "filled up" high rank boys, the up-rank effect increases. This impresses upon us the need to interpret LOLOG fits conditional on the specified ordering process, in particular when the ordering process is based on nodal covariates.
 
-
 \subsection{Employee Voice}
 
-This data set contained 6 directed networks of between 24 and 39 nodes of employee voice, i.e. making a suggestion or voicing a problem \cite{Pauksktat2011}. The data was collected from employees of three Dutch preschools, each with two waves of data. Since there was significant longitudinal incompleteness, authors of paper, treated each network separately, and carried out a meta analysis for each wave to test their hypotheses.
+This data set contained 6 directed networks of between 24 and 39 nodes of employee voice, i.e. making a suggestion or voicing a problem from a speaker to a recipient \cite{Pauksktat2011}. The data was collected from employees of three Dutch preschools, each with two waves of data. Since there was significant longitudinal incompleteness, the authors of paper treated each network separately, and carried out a meta analysis for each wave to test their hypotheses.
+
+They found support for high positions in a recipient’s  organizational hierarchy, increasing the likelihood of voice. They also found that both good social relationship and team co-membership in a dyad increased the likelihood of voice in that dyad.
+
+The failed to find support for the degree of the recipient or speaker impacting the likelihood of voice occurring in a dyad. The authors also concluded that there was not sufficient support to claim that a speaker's high position in the organizational hierarchy resulted in a higher likelihood of voice occurring in their dyads.
 
 We were able to replicate published ERGM in only 1 case, however removing the out-2-star term allowed us to fit a further 4 cases, and removing the in-2-star term sufficed to allow a model for the final case. We note that the decay parameters were not specified in the paper, though we tried possible combinations without being able to match the published fit. The results were not qualitatively. It seems likely the effect due to the omission of the 2-star terms, was absorbed by other terms somewhat.
 
@@ -1478,7 +1547,9 @@ As the ERGM the LOLOG model with nodal covariates fits well, we argue that the n
 
 \subsection{Company Boards}
 
-Here we consider the 808 node, undirected networks of interlocking boards in S&P 500 companies in the years 2007, 2008, 2009 and 2010. The nodes in the network are companies, with a tie being present if the company's board shares members. The network approach using ERGMs to understand the network, was presented in \cite{Gygax2015}.
+Here we consider the 808 node, undirected networks of interlocking boards in S&P 500 companies in the years 2007, 2008, 2009 and 2010. The nodes in the network are companies, with a tie being present if the company's board shares members. The network approach using ERGMs to understand the network, was presented in \cite{Gygax2015}, in particular to understand tendencies for compensation structure, among companies that have connected boards.
+
+The authors concluded that once accounting for market size, board characteristics industry differences, and social structure in the network, there was a tendency for interlocking board companies to have a similar proportion of stock compensation in their packages. They also found the inverse tendency for fixed components of packages, which the authors interpret as firms that were not connected, tended to independently anticipate future markets not performing well. Thus in this period they moved to relying on fixed compensation as a incentive for executive performance.
 
 The authors supplied the data set without nodal covariates, therefore we were unable to replicate the reported ERGM fit.
 
@@ -1486,13 +1557,15 @@ We were able to fit LOLOG models for each of the 4 networks, both with geometric
 
 \subsection{Swiss Decisions}
 
-The authors in \cite{Fischer2015} investigated directed reputational trust networks of between 19 and 26 nodes among actors in 10 decision making processes in Switzerland in the 2000s. A node in this networks is an actor in the decision process, with a tie from actor $i$ to actor $j$ being $i$ nominating $j$ as being influential in the decision making process. The authors argue that aggregating reputational power, and then proceeding with the analysis, ignores the inherent relational nature of the data. They argue that to fully model the concept of reputational power explicitly accounting for the social structure with ERGM is important.
+The authors in \cite{Fischer2015} investigated directed reputational trust networks of between 19 and 26 actors in 10 decision making processes in Switzerland in the 2000s. A node in this networks is an actor in the decision process, with a tie from actor $i$ to actor $j$ being $i$ nominating $j$ as being influential in the decision making process. The authors argue that aggregating reputational power, and then proceeding with the analysis, ignores the inherent relational nature of the data. They argue that to fully model the concept of reputational power explicitly accounting for the social structure with ERGM is important.
+
+The authors concluded that "formal authority, the intensity of participation in institutional arenas of decision-making processes, and the centrality in the related collaboration network all have – albeit to different extents – a positive effect on power assessment." They also conclude that actor homophily, preference homophily as well as collaboration in parallel processes, do not in general impact actors' assessment of power. These results are regarded as positive by the authors as an indication that reputational power, is capturing what it should. They do however note a tendency of collaborators in a single decision making process to see each other as particularly powerful which is noted as "problematic". Collaboration should improve an actor's assessment of the other's power but not should not be more likely that not to increase the perception of power.
 
 We were able to fit the ERGM with the published parameters in 9 out of 10 cases, but the parameter estimates were often inconsistent. Despite the signs and significance of our estimated parameters not always being consistent with the published models, our fitted ERGMS in general fitted the network data well. We were unable to fit the LOLOG model with the published ERGM terms in 8 out of 10, we suspect this is due to the correlation between the GWESP and GWDSP (geometrically weighted dyadwise shared partners) terms. As these were small networks with between 19 and 26 nodes with complex models fit to them we believe the LOLOG models with triangles and stars were potentially over fitting, achieving a good fit, yet providing large parameter estimate standard deviations. We suggest that inference based on such models should be treated with caution. In general in such small networks it seems that ERGM is often a preferable model.
 
 \subsection{University Emails}
 
-This is a undirected network of 1133 nodes within a university, with a connection defined based on a specified frequency of email contact. We suspect this is not a typical social network, as a connection based on an email is a very weak social interaction. We note that the authors did not fit an ERGM using an MLE approach, they selected parameters that yielded networks that fit on some subjective quantities, the statistical properties of their analysis are therefore unknown.
+This is a undirected network of 1133 nodes within a university, with a connection defined based on a specified frequency of email contact. We suspect this is not a typical social network, as a connection based on an email is a very weak social interaction. We note that the authors did not fit an ERGM using an MLE approach, they selected parameters that yielded networks that fit on some subjective quantities, the statistical properties of their analysis are therefore unknown. We do not further comment on the authors qualitative results, due to the lack of statistical knowledge of the parameters.
 
 We were able to fit an ERGM with the standard MCMC MLE approach however, this fit the observed network data very poorly, so we do not discuss it further. We were able to fit a LOLOG model with triangle and star terms however we were not able to obtain a good fit to the observed network and the model had limited interpretability.
 
@@ -1506,6 +1579,8 @@ The authors' approach was non standard in the context of modern methods. They fi
 
 Another model was next fit, regarding the 3 classes as a single model with no edges between children in different classes. The authors then fit ERGM with pseudo likelihood with various constraints regarding the parameters for each of the classes.
 
+The authors concluded there was a tendency towards mutual ties, that did not differ significantly with gender matching. Attractiveness and expansiveness interpretation was presented on an individual child basis, with the authors observing improved fit with the inclusion of these parameters.
+
 As this was a non standard modelling approach we did not recreate the published ERGM fits directly. We were able to fit the ERGM model with MCMC MLE methods, with GWESP and GWDEG terms for the grade 4 and 5 models, but needed to omit the GWESP terms to be able to fit the grade 3 network. All models showed strong homophily on grade, with the GWESP term significant and positive and the GWDEG terms not significant for grades 4 and 5. The simpler grade 3 model had significant and negative terms for GWDEG terms suggesting that the network was not driven by super friendship nominators or nomination receivers. These models fitted the observed network data well.
 
 We were not able to fit LOLOG models to these networks using the published ERGM terms, however using triangle and star terms we were able to achieve a better fit with the LOLOG model. However the LOLOG model parameters had large standard errors in line with our experiences with very small approximately 20 node networks, so for the grade 4 and 5 networks the ERGM model with modern terms was preferable. As we were unable to fit an ERGM to the grade 3 model with the GWESP term and the ERGM with GWDEG terms did not fit this network well, so we suggest the LOLOG model was more suitable for modelling the grade 3 network.
@@ -1515,9 +1590,48 @@ We were not able to fit LOLOG models to these networks using the published ERGM 
 
 These networks are directed and undirected networks of websites with hyperlinks and similar "framing" of issues respectively. The hyperlink network had 158 websites/nodes whereas the framing network had 150 websites/nodes.
 
+The authors noted significant homophily in the three social movement categories they defined, so that sites were more likely to be linked and frame issues similarly if they belonged to the same social movement. Though this effect was stronger in the hyperlink network. They note that all their structural coefficients in the hyperlink network were positive and significant, informing them of what they refer to as "informal linking" in the hyperlink network, that is a network structure consistent with "social interactions". They note that the framing network is denser with greater centralisation than the link network, suggesting there is significant unconscious connection between websites and a tendency for decentralisation within social movements.
+
 We were able to recreate the published fits in both cases however found that the models did not fit the observed networks well. We found the recreated ERGM for the hyperlink network in particular fit very poorly. We were able to fit the LOLOG models with the ERGM terms but both models had similarly poor fit on the observed data.
 
 We were able to fit LOLOG models using triangle and star terms to achieve a good fit to the observed data, and therefore recommend LOLOG as a better model for explaining these networks.
+
+\subsection{Links to publically available data}
+
+Table \ref{tab:public_data} provides hyperlinks to the publicly available datasets used in our ensemble.
+
+```{r}
+tmp <- data.frame(Network =
+  c("Add Health",
+    "Elementary School",
+    "Florentine Families",
+    "Kapferer's Tailors",
+    "Natural Disasters",
+    "German Schoolboys",
+    "Company Boards"
+    
+    )
+)
+
+tmp$Links = c(
+    "addhealth.cpc.unc.edu/",
+    "moreno.ss.uci.edu/data.html#children
+",
+    "sites.google.com/site/ucinetsoftware/datasets/padgettflorentinefamilies",
+    "sites.google.com/site/ucinetsoftware/datasets/kapferertailorshop",
+"vlado.fmf.uni-lj.si/pub/networks/data/GBM/kansas.htm",
+"github.com/gephi/gephi/wiki/Datasets",
+"corp.boardex.com")
+
+# tmp$Notes = rep(" ",dim(tmp)[1])
+# tmp$Notes[1] = "Partially publicly available, requires restricted use dataset to fully reconstruct network dataset"
+# tmp$Notes[7] = "Publicly available data, though significant effort required to process, authors provided dataset without nodal covariates"
+
+
+kable(tmp,format = "latex",booktabs = "T",longtable= T,caption = "\\label{tab:public_data} Links to publicly available datasets")%>%
+  kable_styling(latex_options =c("striped"))
+```
+
 
 <!-- \bibliographystyle{apalike} -->
 \bibliographystyle{chicago}
