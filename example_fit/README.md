@@ -9,7 +9,7 @@ Logo"/>](https://github.com/statnet)
 <br>
 <center> <h3>Comparing the Real-World Performance of Exponential-family Random Graph Models</h3></center>
 <center> <h3>and Latent Order Logistic Models</h3></center>
-<center> <h1> Reproducibility Code and data</h1></center>
+<center> <h1>Reproducibility Code and data</h1></center>
 <center> <h3>by</h3></center>
 <center> <h3>Duncan A. Clark and Mark S. Handcock</h3></center>
 
