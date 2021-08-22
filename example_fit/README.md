@@ -4725,7 +4725,7 @@ gofit_lolog_list <- make_list(c(1), seq(0, 23, 1), "gofit_lolog")
 # assign ergm variables for lists
 for (i in ergm_list) {
     a <- eval(parse(text = paste("ergm_fit", substr(i, 5, nchar(i)), sep = "")))
-    if (length(a) == 1 & is.na(a)) {
+    if (length(a) == 1 & is.na(a[1])) {
         assign(paste("ergm", substr(i, 5, nchar(i)), sep = ""), NA)
         assign(paste("summary_ergm", substr(i, 5, nchar(i)), sep = ""), NA)
         assign(paste("gofit_ergm", substr(i, 5, nchar(i)), sep = ""), NA)
@@ -4738,25 +4738,11 @@ for (i in ergm_list) {
             substr(i, 5, nchar(i)), "$gofit", sep = ""))))
     }
 }
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
 
 # assign lolog variables for lists
 for (i in lolog_list) {
     a <- eval(parse(text = paste("lolog_fit", substr(i, 6, nchar(i)), sep = "")))
-    if (length(a) == 1 & is.na(a)) {
+    if (length(a) == 1 & is.na(a[1])) {
         assign(paste("lolog", substr(i, 6, nchar(i)), sep = ""), NA)
         assign(paste("summary_lolog", substr(i, 6, nchar(i)), sep = ""), NA)
         assign(paste("gofit_lolog", substr(i, 6, nchar(i)), sep = ""), NA)
@@ -4769,76 +4755,6 @@ for (i in lolog_list) {
             substr(i, 6, nchar(i)), "$gofit", sep = ""))))
     }
 }
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
-
-#> Warning in if (length(a) == 1 & is.na(a)) {: the condition has length > 1 and
-#> only the first element will be used
 
 # save lists:
 save(list = c(ergm_list, summary_ergm_list, gofit_ergm_list), file = "ergm_fit.RData")

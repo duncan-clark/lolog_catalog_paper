@@ -31,7 +31,7 @@ ergm_fit_1_0 <- ergm_fit(net,
                          gofit_terms = c("edges","degree(0:25)","esp(0:15)"),
                          gofit_name = "ergm_1_0")
 
-#See that fit isn't very good:
+#See that fit is not very good:
 #Seems that rank and repeater are the main covariate to have an effect
 #Possible sweetgiver also has an effct but since there is only one sweetgiver in 
 #the network the parameter MLE has a high s.d. and is not significant.
@@ -590,11 +590,11 @@ lolog_fit_1_19 <- lolog_fit(net,
 # 20)
 #Fit with preferential attachment term, fitting with star(2,3), including triangle term in model
 #Try with higher values of k
-#1  - didn't work
-#10 - didn't work
-#15 - didn't work
-#5  - didn't work
-#2  - didn't work
+#1  - did not work
+#10 - did not work
+#15 - did not work
+#5  - did not work
+#2  - did not work
 lolog_fit_1_20 <- lolog_fit(net,
                             terms = c("edges",
                                       "nodeCov('repeater_or_sweets_in','in')",
@@ -616,7 +616,7 @@ lolog_fit_1_20 <- lolog_fit(net,
 # 21)
 #Fit with preferential attachment term, fitting with star(2,3), and triangles.
 #Remove all other structural terms
-#Didn't work
+#Did not work
 #Remove nodeCov(rank_in)
 #Remove nodeCov(rank_in) and uprank
 lolog_fit_1_21 <- lolog_fit(net,
@@ -691,14 +691,13 @@ lolog_fit_1_23 <- lolog_fit(net,
                             gofit_name = "lolog_1_23",
                             vertex_order = "rank")
 
-#Doesn't seem to be an appreciabley better fit than LOLOG without ordering
+#Does not seem to be an appreciabley better fit than LOLOG without ordering
 
 #Would like to look at edge specified ordering process, 
 #i.e. consider neighbours in the ranking proceedure since students sit in rank order
 #not suppported by LOLOG currently.
 
 #------------ Save all the models for later ----------
-setwd("..")
 #list making function
 make_list <- function(networks,models,type,space=ls()){
   models <- rep(models,each = length(networks))
