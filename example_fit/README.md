@@ -1,10 +1,3 @@
----
-output:
-  md_document:
-    variant: gfm
----
-
-
 
 <img src="figures/ps_statistics_DoS.png" width = 120 alt="DoS Logo"/>
 
