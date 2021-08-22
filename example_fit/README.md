@@ -8,9 +8,7 @@ output:
 
 <img src="figures/ps_statistics_DoS.png" width = 120 alt="DoS Logo"/>
 
-### ``Comparing the Real-World Performance of Exponential-family
-### Random Graph Models
-### and Latent Order Logistic Models''
+### ``Comparing the Real-World Performance of Exponential-family Random Graph Models and Latent Order Logistic Models''
 
 # Reproducibility Code and data
 ### by
