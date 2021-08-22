@@ -19,15 +19,13 @@ knitr::opts_chunk$set(
 )
 ```
 
-<img src="figures/ps_statistics_DoS.png" width = 120 alt="DoS Logo"/>
 
-### ``Comparing the Real-World Performance of Exponential-family
-### Random Graph Models
-### and Latent Order Logistic Models''
+<img src="figures/ps_statistics_DoS.png" width = 200 alt="DoS Logo"/>[<img src="figures/statnetLogo.png" align="right" width=100 alt="statnet
+Logo"/>](https://github.com/statnet)
 
-# Reproducibility Code and data
-### by
-## Duncan A. Clark and Mark S. Handcock
+<br>
+<br>
+<center> <h3>Comparing the Real-World Performance of Exponential-family Random Graph Models</h3></center>
 
 ```{r,include=FALSE}
 set.seed(294)
@@ -200,7 +198,7 @@ ergm_fit_1_4 <- ergm_fit(net,
 ```
 
 ESP and minimum distance fit similar to model 1, slight improvement on in and out degree fit
-May suggest some popularity process not captured by model 1
+It may suggest some popularity process not captured by model 1
 
 5) Check to see if triangle and star model is degenerative:
 ```{r, eval = TRUE}
@@ -254,10 +252,10 @@ ergm_fit_1_6 <- ergm_fit(net,
 Key is to check whether this model captures the ESP distribution, since if it does
 the ESP distribution may not be due to transitive closure.
 
-Captures degree distribution arguably better than models with gwesp term
+Captures degree distribution arguably better than models with gwesp term.
 ESP distribution fits somewhat, though issues with esp 0 and 2, so perhaps does not account for these well
 
-##--------- LOLOG Fitting ---------
+### LOLOG Fitting 
 
 0) Fit initial LOLOG model with dyad independence
 ```{r, eval = TRUE}
@@ -392,8 +390,6 @@ lolog_fit_1_3 <- lolog_fit(net,
                            gofit_terms = c("edges","degree(0:15,'out')","degree(0:15,'in')","esp(0:15)"),
                            gofit_name = "lolog_1_3")
 ```
-
-Comment:
 
 4) Lolog fitting procedure
 
@@ -820,7 +816,8 @@ Would like to look at edge specified ordering process,
 i.e. consider neighbours in the ranking procedure since students sit in rank order
 not supported by LOLOG currently.
 
-#------------ Save all the models for later ----------
+### Save all the models for later
+
 ```{r, eval = TRUE}
 #list making function
 make_list <- function(networks,models,type,space=ls()){
