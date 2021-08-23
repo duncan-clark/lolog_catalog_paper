@@ -13,7 +13,7 @@ Logo"/>](https://github.com/statnet)
 <center> <h3>Duncan A. Clark and Mark S. Handcock</h3></center>
 
 This site contain code and software to reproduce example analyses from the paper 
-<it>Comparing the Real-World Performance of Exponential family Random Graph Models and Latent Order Logistic Models</it> by Duncan A. Clark and  Mark
+*Comparing the Real-World Performance of Exponential family Random Graph Models and Latent Order Logistic Models* by Duncan A. Clark and  Mark
 S. Handcock, 2021, to appear in XXX. The authirs are in the Department of Statistics at UCLA.
 
 ### Installation 
