@@ -64,7 +64,7 @@ This section contains descriptions of each of the individual networks in the ens
 
 This was a network of high school students, obtained from the well studied National Longitudinal Study of Adolescent to Adult Health \citep{AddHealth2007}. Networks from the survey have been fit using ERGMs [\cite{Goodreau2007}, \cite{Hunter_Goodreau_2008}]. There are multiple networks available but the particular network in this case has 1681 adolescents/nodes with covariates for grade, gender and race provided.
 
-Analysis of the network with ERGMs, yields insights into the typical relationships between nodes of different and common grade, gender and race. Notably the tendency towards homophily within all grades as well as between white and black students but not hispanic students. The models allow for the strong interdependence of network ties, using the GWESP term.
+Analysis of the network with ERGMs, yields insights into the typical relationships between nodes of different and common grade, gender and race. Notably the tendency towards homophily within all grades as well as between White and Black students but not Hispanic students. The models allow for the strong interdependence of network ties, using the GWESP term.
 
 We were able to fit ERGMs and LOLOG with the published ERGM terms but the models did not fit the data well, as noted extensively in \cite{Goodreau2007}.
 
@@ -197,7 +197,7 @@ We were able to recreate the published fits in both cases however found that the
 
 We were able to fit LOLOG models using triangle and star terms to achieve a good fit to the observed data, and therefore recommend LOLOG as a better model for explaining these networks.
 
-\section{Links to publically available data}
+\section{Links to publicly available data}
 
 Table \ref{tab:public_data} provides hyperlinks to the publicly available datasets used in our ensemble.
 
