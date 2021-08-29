@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.8)  22 AUG 2021 15:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.8.28)  29 AUG 2021 10:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **lolog_catelog_writeup_JRSSA_major_revisions_git.tex
 (./lolog_catelog_writeup_JRSSA_major_revisions_git.tex
 LaTeX2e <2021-06-01> patch level 1
-L3 programming layer <2021-07-12> (./statsoc.cls
+L3 programming layer <2021-08-27> (./statsoc.cls
 Document Class: statsoc 
 
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics
@@ -1051,93 +1051,101 @@ p_JRSSA_major_revisions_git.out)
 
 [1{c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pd
 ftex.map}] [2]
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 256.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 253.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-56.
+53.
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-56.
+53.
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-256.
+253.
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-256.
+253.
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <11> on input line 256.
+(Font)              <11> on input line 253.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.69997> on input line 256.
+(Font)              <7.69997> on input line 253.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.5> on input line 256.
+(Font)              <5.5> on input line 253.
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 25
-6.
+3.
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 
 LaTeX Font Warning: Font shape `U/lasy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 256.
+(Font)              size <5> substituted on input line 253.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 256
+LaTeX Font Info:    Trying to load font information for U+msa on input line 253
 .
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 256
+LaTeX Font Info:    Trying to load font information for U+msb on input line 253
 .
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 25
-6.
+3.
 
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 256.
+(Font)              size <5> substituted on input line 253.
 
 [3]
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 2
-72.
+69.
 
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/doublestroke/Udsr
 om.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 ) [4]
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-52.
+49.
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [5] [6]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 451.
+(Font)              <10> on input line 440.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 451.
+(Font)              <7> on input line 440.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 451.
+(Font)              <5> on input line 440.
 
-Overfull \hbox (24.18394pt too wide) in paragraph at lines 505--505
+Overfull \hbox (24.18394pt too wide) in paragraph at lines 494--494
  [] 
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [7] [8pdfTeX warning (ext4): destination with the same identifier (name{table.1
 }) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.545 
-      ] [9]
-Overfull \hbox (3.18597pt too wide) in paragraph at lines 640--640
+l.540 
+      ]
+Overfull \hbox (3.18597pt too wide) in paragraph at lines 613--613
+ [] 
+ []
+
+[9]
+Overfull \hbox (3.18597pt too wide) in paragraph at lines 684--684
  [] 
  []
 
@@ -1145,14 +1153,9 @@ Overfull \hbox (3.18597pt too wide) in paragraph at lines 640--640
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.661 
-      ]
-Overfull \hbox (3.18597pt too wide) in paragraph at lines 711--711
- [] 
- []
-
-
-Overfull \hbox (3.18597pt too wide) in paragraph at lines 743--743
+l.684 \end{table}
+                 ]
+Overfull \hbox (3.18597pt too wide) in paragraph at lines 716--716
  [] 
  []
 
@@ -1160,177 +1163,166 @@ Overfull \hbox (3.18597pt too wide) in paragraph at lines 743--743
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.764 
-      ]
-Underfull \vbox (badness 1721) has occurred while \output is active []
-
-[12pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
-has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.823 
+l.760 
       ]
 <lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chu
-nk-6-1.pdf, id=364, 722.7pt x 433.62pt>
+nk-6-1.pdf, id=301, 722.7pt x 433.62pt>
 File: lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unname
 d-chunk-6-1.pdf Graphic file (type pdf)
 <use lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed
 -chunk-6-1.pdf>
 Package pdftex.def Info: lolog_catelog_writeup_JRSSA_major_revisions_git_files/
-figure-latex/unnamed-chunk-6-1.pdf  used on input line 826.
+figure-latex/unnamed-chunk-6-1.pdf  used on input line 799.
 (pdftex.def)             Requested size: 418.251pt x 250.9506pt.
 
-Overfull \hbox (28.19841pt too wide) in paragraph at lines 852--852
+Overfull \hbox (28.19841pt too wide) in paragraph at lines 825--825
  [] 
  []
 
-[13pdfTeX warning (ext4): destination with the same identifier (name{table.5}) 
+[12pdfTeX warning (ext4): destination with the same identifier (name{table.4}) 
 has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.863 W
-       e also show the GOF for in-degree the LOLOG model with GWESP and 2- andp
-dfTeX warning (ext4): destination with the same identifier (name{table.6}) has 
-been already used, duplicate ignored
+l.846 
+      ] [13pdfTeX warning (ext4): destination with the same identifier (name{ta
+ble.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.863 W
-       e also show the GOF for in-degree the LOLOG model with GWESP and 2- and]
+l.846 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.846 
+       <./lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/un
+named-chunk-6-1.pdf>]
 <lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chu
-nk-7-1.pdf, id=380, 722.7pt x 433.62pt>
+nk-7-1.pdf, id=335, 722.7pt x 433.62pt>
 File: lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unname
 d-chunk-7-1.pdf Graphic file (type pdf)
 <use lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed
 -chunk-7-1.pdf>
 Package pdftex.def Info: lolog_catelog_writeup_JRSSA_major_revisions_git_files/
-figure-latex/unnamed-chunk-7-1.pdf  used on input line 876.
+figure-latex/unnamed-chunk-7-1.pdf  used on input line 849.
 (pdftex.def)             Requested size: 418.251pt x 250.9506pt.
-[14pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
- has been already used, duplicate ignored
+[14pdfTeX warning (ext4): destination with the same identifier (name{table.6}) 
+has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.899 
-       <./lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/un
-named-chunk-6-1.pdf>] [15pdfTeX warning (ext4): destination with the same ident
-ifier (name{figure.2}) has been already used, duplicate ignored
+l.890 
+      ] [15pdfTeX warning (ext4): destination with the same identifier (name{fi
+gure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.931 
-       <./lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/un
-named-chunk-7-1.pdf>] [16]
-Overfull \hbox (48.79471pt too wide) in paragraph at lines 1019--1019
+l.910 \item A
+             re we able to fit the LOLOG with the published ERGM terms?\\ <./lo
+log_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chunk-
+7-1.pdf>]
+Overfull \hbox (48.79471pt too wide) in paragraph at lines 988--988
  [] 
  []
 
-[17] [18pdfTeX warning (ext4): destination with the same identifier (name{table
+[16] [17pdfTeX warning (ext4): destination with the same identifier (name{table
 .7}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1077 
-       ]
-Underfull \vbox (badness 2875) has occurred while \output is active []
+l.1004 W
+        here a LOLOG model with ERGM terms was able to be fit it usually did] [
+18]
+
+LaTeX Warning: Command \" invalid in math mode on input line 1109.
+
+
+LaTeX Warning: Command \" invalid in math mode on input line 1109.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 1111.
 
 [19]
-
-LaTeX Warning: Command \" invalid in math mode on input line 1135.
-
-
-LaTeX Warning: Command \" invalid in math mode on input line 1135.
-
-
-LaTeX Warning: Command \' invalid in math mode on input line 1137.
-
 <lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chu
-nk-9-1.pdf, id=461, 722.7pt x 433.62pt>
+nk-9-1.pdf, id=406, 722.7pt x 433.62pt>
 File: lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unname
 d-chunk-9-1.pdf Graphic file (type pdf)
 <use lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed
 -chunk-9-1.pdf>
 Package pdftex.def Info: lolog_catelog_writeup_JRSSA_major_revisions_git_files/
-figure-latex/unnamed-chunk-9-1.pdf  used on input line 1151.
+figure-latex/unnamed-chunk-9-1.pdf  used on input line 1125.
 (pdftex.def)             Requested size: 418.251pt x 250.9506pt.
 <lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chu
-nk-10-1.pdf, id=462, 722.7pt x 433.62pt>
+nk-10-1.pdf, id=407, 722.7pt x 433.62pt>
 File: lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unname
 d-chunk-10-1.pdf Graphic file (type pdf)
 <use lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed
 -chunk-10-1.pdf>
 Package pdftex.def Info: lolog_catelog_writeup_JRSSA_major_revisions_git_files/
-figure-latex/unnamed-chunk-10-1.pdf  used on input line 1160.
+figure-latex/unnamed-chunk-10-1.pdf  used on input line 1134.
 (pdftex.def)             Requested size: 418.251pt x 250.9506pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chu
-nk-11-1.pdf, id=463, 722.7pt x 433.62pt>
-File: lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unname
-d-chunk-11-1.pdf Graphic file (type pdf)
-<use lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed
--chunk-11-1.pdf>
-Package pdftex.def Info: lolog_catelog_writeup_JRSSA_major_revisions_git_files/
-figure-latex/unnamed-chunk-11-1.pdf  used on input line 1169.
-(pdftex.def)             Requested size: 418.251pt x 250.9506pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chu
-nk-12-1.pdf, id=464, 722.7pt x 433.62pt>
-File: lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unname
-d-chunk-12-1.pdf Graphic file (type pdf)
-<use lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed
--chunk-12-1.pdf>
-Package pdftex.def Info: lolog_catelog_writeup_JRSSA_major_revisions_git_files/
-figure-latex/unnamed-chunk-12-1.pdf  used on input line 1178.
-(pdftex.def)             Requested size: 418.251pt x 250.9506pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \vbox (badness 1681) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [20pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
  has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1196 
+l.1140 
         <./lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/u
-nnamed-chunk-9-1.pdf>] [21pdfTeX warning (ext4): destination with the same iden
-tifier (name{figure.4}) has been already used, duplicate ignored
+nnamed-chunk-9-1.pdf>]
+<lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chu
+nk-11-1.pdf, id=424, 722.7pt x 433.62pt>
+File: lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unname
+d-chunk-11-1.pdf Graphic file (type pdf)
+<use lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed
+-chunk-11-1.pdf>
+Package pdftex.def Info: lolog_catelog_writeup_JRSSA_major_revisions_git_files/
+figure-latex/unnamed-chunk-11-1.pdf  used on input line 1143.
+(pdftex.def)             Requested size: 418.251pt x 250.9506pt.
+<lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed-chu
+nk-12-1.pdf, id=425, 722.7pt x 433.62pt>
+File: lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unname
+d-chunk-12-1.pdf Graphic file (type pdf)
+<use lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unnamed
+-chunk-12-1.pdf>
+Package pdftex.def Info: lolog_catelog_writeup_JRSSA_major_revisions_git_files/
+figure-latex/unnamed-chunk-12-1.pdf  used on input line 1152.
+(pdftex.def)             Requested size: 418.251pt x 250.9506pt.
+
+Underfull \vbox (badness 2326) has occurred while \output is active []
+
+[21pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1217 \subsection
-                  {Junior High} <./lolog_catelog_writeup_JRSSA_major_revisions_
-git_files/figure-latex/unnamed-chunk-10-1.pdf>] [22pdfTeX warning (ext4): desti
-nation with the same identifier (name{figure.5}) has been already used, duplica
-te ignored
+l.1158 
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1247 
+l.1158 
         <./lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/u
-nnamed-chunk-11-1.pdf>] [23pdfTeX warning (ext4): destination with the same ide
-ntifier (name{figure.6}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1270 \subsection
-                  {Florentine Families} <./lolog_catelog_writeup_JRSSA_major_re
-visions_git_files/figure-latex/unnamed-chunk-12-1.pdf>] [24] [25] [26] [27] [28
-]
-Overfull \hbox (33.24146pt too wide) in alignment at lines 1617--1631
+nnamed-chunk-10-1.pdf> <./lolog_catelog_writeup_JRSSA_major_revisions_git_files
+/figure-latex/unnamed-chunk-11-1.pdf>]
+Overfull \hbox (33.24146pt too wide) in alignment at lines 1164--1178
  [] [] 
  []
 
-[29] (./lolog_catelog_writeup_JRSSA_major_revisions_git.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 49--52
+(./lolog_catelog_writeup_JRSSA_major_revisions_git.bbl [22pdfTeX warning (ext4)
+: destination with the same identifier (name{figure.6}) has been already used, 
+duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.21 
+      <./lolog_catelog_writeup_JRSSA_major_revisions_git_files/figure-latex/unn
+amed-chunk-12-1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 42--45
 []\T1/lmr/m/n/11 Fellows, I. (2018a).  La-tent or-der lo-gis-tic (lolog) graph 
 mod-els.
  []
 
-[30]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 8
-3.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 7
+6.
 (c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [31]) [32] (./lolog_catelog_writeup_JRSSA_major_revisions_git.aux
+) [23] [24]) [25] (./lolog_catelog_writeup_JRSSA_major_revisions_git.aux
 \statsocwidth@a=\dimen310
 \statsocwidth@b=\dimen311
 \statsocwidth@c=\dimen312
@@ -1345,16 +1337,16 @@ LaTeX Font Warning: Size substitutions with differences
 
 Package rerunfilecheck Info: File `lolog_catelog_writeup_JRSSA_major_revisions_
 git.out' has not changed.
-(rerunfilecheck)             Checksum: 8D74827B10E4B8D9E172681C833521F4;5234.
+(rerunfilecheck)             Checksum: 58784EE9FDE977FE4C6A3B67F94B1D7F;3132.
  ) 
 Here is how much of TeX's memory you used:
- 22963 strings out of 480502
- 420549 string characters out of 5897998
- 750539 words of memory out of 5000000
- 39987 multiletter control sequences out of 15000+600000
+ 22926 strings out of 480559
+ 420013 string characters out of 5901696
+ 750070 words of memory out of 5000000
+ 39915 multiletter control sequences out of 15000+600000
  469234 words of font info for 90 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 99i,23n,97p,901b,483s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,23n,97p,901b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1
 .enc}{c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-
 ec.enc}{c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/l
@@ -1386,11 +1378,11 @@ ncan/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb><c:/Us
 ers/Duncan/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/symbo
 ls/msbm10.pfb><c:/Users/Duncan/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/p
 ublic/rsfs/rsfs10.pfb>
-Output written on lolog_catelog_writeup_JRSSA_major_revisions_git.pdf (32 pages
-, 571233 bytes).
+Output written on lolog_catelog_writeup_JRSSA_major_revisions_git.pdf (25 pages
+, 542544 bytes).
 PDF statistics:
- 720 PDF objects out of 1000 (max. 8388607)
- 621 compressed objects within 7 object streams
- 131 named destinations out of 1000 (max. 500000)
- 299 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 520 compressed objects within 6 object streams
+ 109 named destinations out of 1000 (max. 500000)
+ 187 words of extra memory for PDF output out of 10000 (max. 10000000)
 
