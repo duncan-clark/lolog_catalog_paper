@@ -910,23 +910,23 @@ This is to assess the validity of the published ERGM results, and to assess if E
 \item Are we able to fit the LOLOG with the published ERGM terms?\\
 This is to assess the LOLOG on terms likely favourable to the ERGM. Typically, published ERGM will have undergone model selection criteria to
 choose terms that had good fit compared to other possible ERGM. This criteria assesses the flexibility of the LOLOG model class.
-\item Does LOLOG model with published ERGM terms fit well?\\
+\item Does the LOLOG model with the published ERGM terms fit well?\\
 This is an absolute measure of the LOLOG goodness-of-fit with the ERGM terms.
 \item Are we able to fit the LOLOG model with ERGM Markov terms (that are often degenerate in ERGM)?\\
-Markov terms, such as $k$-stars and triangles, often lead to near-degenerate models despite their conceptual appeal \citep{FrankStrauss1986}. This criteria assesses if the LOLOG can aid in interpretability due using simpler terms that are not possible in ERGM.
+Markov terms, such as $k$-stars and triangles, often lead to near-degenerate models despite their conceptual appeal \citep{FrankStrauss1986}. This criteria assesses if the LOLOG can aid in interpretability by using simpler terms that are not possible in ERGM.
 \item Is a better fit achieved with LOLOG than the published ERGM?\\
 This is a direct comparison to judge if the LOLOG is a better model for the observed data than the published ERGM.
 \item Do the published ERGM and best-fitting LOLOG models have consistent interpretations?\\
 This assesses if qualitative substantive conclusions draw from each model are consistent with the other.
 If affirmative, this gives some confidence that qualitative conclusions are not simply an artifact of the chosen modelling approach.
-\item Which model do we believe to be more useful.\\
+\item Which model do we believe to be more useful?\\
 This is a subjective judgement criterion. A major component is the goodness-of-fit criteria (Section 2.5). These criteria measure the degree that important statistical characteristics of the network data are reproduced by the model. These focus on characteristics not explicitly in the model. A second component is the substantive interpretability of the terms (i.e., are they socially salient). A third is the complexity of the model terms (i.e., the value of simplicity).
 \end{enumerate}
 
 Table \ref{tab:summary_table} provides a summary of the ERGM and LOLOG
 model fits for the networks in our ensemble, the columns are binary
-answers (1=Yes,0 = No), to the above criteria. The fits were carried out
-in R using the \texttt{ergm} package \citep{ergm_3_9_4}, and the
+answers (1=Yes, 0 = No), to the above criteria. The fits were carried
+out in R using the \texttt{ergm} package \citep{ergm_3_9_4}, and the
 \texttt{lolog} package \citep{LOLOG_github}. For the GWESP, GWDSP and
 GWDEG terms decay parameters were used as stated. If they where not
 available, \(\alpha= 0.5\) was used.
@@ -1092,7 +1092,7 @@ procedure, the LOLOG model may still be a useful approach to
 understanding the social processes producing network data.
 
 All analysis was done in the R environment \citep{R} primarily with the
-\texttt{lolog} \citep{LOLOG_github}and \texttt{ergm} packages
+\texttt{lolog} \citep{LOLOG_github} and \texttt{ergm} packages
 \citep{ergm_3_9_4}. The code and available data to reconstruct the
 analyses of this paper are available at
 \url{https://github.com/duncan-clark/lolog_catalog_paper/tree/main/example_fit}.
