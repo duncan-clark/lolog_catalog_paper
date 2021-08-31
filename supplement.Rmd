@@ -5,7 +5,7 @@ output:
     fig_caption: yes
     md_extensions: +raw_attribute
 documentclass: statsoc
-title: "Supplement: ``Comparing the Real-World Performance of Exponential-family Random Graph Models and Latent Order Logistic Models''"
+title: "Supplement: ``Comparing the Real-World Performance of Exponential-family Random Graph Models and Latent Order Logistic Models for Social Network Analysis''"
 header-includes: \usepackage{amsmath}\usepackage{amsfonts}\usepackage{amssymb}\usepackage{mathrsfs}\usepackage{graphicx}\usepackage{float}\usepackage{url}\usepackage{epstopdf}\usepackage{booktabs}\usepackage{longtable}\usepackage{appendix}\usepackage[a4paper]{geometry}\usepackage{graphicx}\usepackage[textwidth=8em,textsize=small]{todonotes}\usepackage{amsmath}\usepackage{natbib}\usepackage{hyperref}\usepackage{xcolor}\usepackage{dsfont}\usepackage{colortbl}
 ---
 
@@ -58,7 +58,7 @@ summary_names = c("Estimate","Std. Error","p-value")
 
 \section{Individual Network Modelling Comments}\label{app:comments}
 
-This section contains descriptions of each of the individual networks in the ensemble of networks considered in ``Comparing the Real-World Performance of Exponential-family Random Graph Models and Latent Order Logistic Models''
+This section contains descriptions of each of the individual networks in the ensemble of networks considered in ``Comparing the Real-World Performance of Exponential-family Random Graph Models and Latent Order Logistic Models for Social Network Analysis''
 
 \subsection{Add Health}
 
