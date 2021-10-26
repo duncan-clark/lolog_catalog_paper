@@ -1,0 +1,1 @@
+We assess performance of LOLOG models on typical networks. We compare ERGMs and LOLOGs on articles in the journal "Social Networks". The are generally in agreement, with at least as good a fit.LOLOGs are fast, easy to use and make a useful addition to available modelling classes.
