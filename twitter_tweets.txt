@@ -1,0 +1,23 @@
+Context
+
+The statistical modeling of complex networks is hard. Most interesting social processes produce much more complex structure than models
+
+Aim
+
+We aim to develop models that are able to represent complex social network processes
+
+Research Gap
+
+Most models that are complex enough to represent networks are difficult to fit and/or interpret
+
+Data
+
+A representative ensemble of complex social networks from the journal "Social Networks"
+
+Methods
+
+We fit the recently proposed Latent Order Logistic models (LOLOG) to the networks and compare their fit to those of the original models
+
+Key Findings
+
+LOLOG generally produce similar or better fits and interpretations. LOLOGs are a fast, easy to use and useful modelling class

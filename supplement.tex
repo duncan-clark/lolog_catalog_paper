@@ -139,12 +139,12 @@ provided.
 Analysis of the network with ERGMs, yields insights into the typical
 relationships between nodes of different and common grade, gender and
 race. Notably the tendency towards homophily within all grades as well
-as between White and Black students but not Hispanic students. The
+as between white and black students but not hispanic students. The
 models allow for the strong interdependence of network ties, using the
 GWESP term.
 
-We were able to fit ERGMs and LOLOG with the published ERGM terms but
-the models did not fit the data well, as noted extensively in
+We were able to fit ERGMs and LOLOG models with the published ERGM terms
+but the models did not fit the data well, as noted extensively in
 \cite{Goodreau2007}.
 
 \cite{Goodreau2007} provided extensive commentary on the goodness of fit
@@ -236,25 +236,25 @@ asymptotically valid, so are likely not valid for such a small network.
 \subsection{German Schoolboys}
 
 This network is a directed network of friendships between German
-schoolboys in class from 1880 to 1881, collected by Johannes Delitsch,
+schoolboys in a class from 1880 to 1881, collected by Johannes Delitsch,
 in one of the earliest studies to engage a network based approach. This
 was reanalysed in \cite{Heidler2014} with ERGMs, and compared with
 similar friendship networks in schools today.
 
-Nodal covariates available were academic class rank, whether the student
-was repeating class rank, whether the student gave sweets out, and
-whether the student was handicapped or not. Note that academic rank also
-has a spatial component since the schoolboys were sat in order of their
-academic rank in the classroom.
+The available nodal covariates were: academic class rank, whether the
+student was repeating class rank, whether the student gave sweets out,
+and whether the student was handicapped or not. Note that academic rank
+also has a spatial component since the schoolboys were sat in order of
+their academic rank in the classroom.
 
 The authors concluded that the pupils network had a tendency towards
-reciprocated friendships. The also concluded the triadic closure
+reciprocated friendships. They also concluded the triadic closure
 observed is generated through transitivity and not through generalized
 exchange, due to the lack of significant cycling triple parameter when
-included. In addition the analysis concluded high academic class rank
-students were more likely to have more friendships and that friendship
-nominations tended to be hierarchical. That is pupils tended to
-nominated other pupils ranked higher than themselves as friends. There
+included. In addition, the analysis concluded that high academic class
+rank students were more likely to have more friendships and that
+friendship nominations tended to be hierarchical. That is, pupils tended
+to nominate other pupils ranked higher than themselves as friends. There
 was also interest in the four repeaters and the `sweets giver' have who
 were concluded to have disproportionately high popularity even after
 allowing for the other social structure of the network. The opposite was
@@ -277,17 +277,18 @@ interpretation with some small differences on various nodal covariate
 terms.
 
 We also experimented with constraining the orderings by nodal covariates
-for this network. Introducing rank based ordering i.e.~considering edges
-involving higher ranked boys first (least academically able) increases
-the up-rank effect and produces a highly significant nodal rank effect.
-As we are considering high rank boys first, in the generating process,
-if all else were equal they become ``filled up'', i.e.~highly connected
-before the lower rank boys are added. However we observe in the data low
-rank boys nominating high rank boys as friends. To counteract the
-negative effect on tie formation between low and the ``filled up'' high
-rank boys, the up-rank effect increases. This impresses upon us the need
-to interpret LOLOG fits conditional on the specified ordering process,
-in particular when the ordering process is based on nodal covariates.
+for this network. Introducing rank based ordering i.e., considering
+edges involving higher ranked boys first (least academically able)
+increases the up-rank effect and produces a highly significant nodal
+rank effect. As we are considering high rank boys first, in the
+generating process, if all else were equal they become ``filled up'',
+i.e., highly connected before the lower rank boys are added. However we
+observe in the data low rank boys nominating high rank boys as friends.
+To counteract the negative effect on tie formation between low and the
+``filled up'' high rank boys, the up-rank effect increases. This
+impresses upon us the need to interpret LOLOG fits conditional on the
+specified ordering process, in particular when the ordering process is
+based on nodal covariates.
 
 \subsection{Employee Voice}
 
@@ -315,9 +316,9 @@ removing the out-2-star term allowed us to fit a further 4 cases, and
 removing the in-2-star term sufficed to allow a model for the final
 case. We note that the decay parameters were not specified in the paper,
 though we tried possible combinations without being able to match the
-published fit. The results were not qualitatively. It seems likely the
-effect due to the omission of the 2-star terms, was absorbed by other
-terms somewhat.
+published fit. The results were not qualitatively different. It seems
+likely that the effect due to the omission of the 2-star terms was
+absorbed by other terms somewhat.
 
 The authors also did not include an edge parameter in their tables of
 their fits. We included an edges parameter, as measure of the baseline
@@ -396,7 +397,7 @@ network, there was a tendency for interlocking board companies to have a
 similar proportion of stock compensation in their packages. They also
 found the inverse tendency for fixed components of packages, which the
 authors interpret as firms that were not connected, tended to
-independently anticipate future markets not performing well. Thus in
+independently anticipate future markets not performing well. Thus, in
 this period they moved to relying on fixed compensation as a incentive
 for executive performance.
 
@@ -483,7 +484,7 @@ model was published before MCMC methods for fitting ERGM were widespread
 and available. The authors used pseudo likelihood to estimate the
 models.
 
-The authors' approach was non standard in the context of modern methods.
+The authors' approach was non-standard in the context of modern methods.
 They first fit a single network with ``expansiveness'' and
 ``attractiveness'' parameters for each individual child, essentially a
 unique parameter governing the number of friends a child is likely to
